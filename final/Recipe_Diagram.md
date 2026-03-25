@@ -28,12 +28,12 @@
 | 🥬 | Cabbage | Day 3 | — |
 | 🥥 | Coconut | Day 3 | — |
 | 🫚 | Beetroot | Day 5 | — |
+| 🍅 | Tomato | Day 6 | 🗡 Kill 300 monsters *(can unlock earlier)* |
 | 🍇 | Grape | Day 8 | 📦 Open a Treasure Pod |
 | ⭐ | Carambola | Day 10 | ⚔️ Defeat first Boss |
 | 🌶️ | Chili | Day 10 | — |
 | 🍎 | Apple | Day 15 | — |
 | 🫑 | Pepper | Day 15 | — |
-| 🍅 | Tomato | Day 6 | 🗡 Kill 300 monsters |
 | 🌵 | Durian *(WIP)* | Day 20 | — |
 | 🍈 | Noni Fruit *(WIP)* | Day 20 | — |
 
