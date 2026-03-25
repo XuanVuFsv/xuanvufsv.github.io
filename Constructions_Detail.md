@@ -192,6 +192,7 @@ Kho chứa vật phẩm. Mỗi port chứa tối đa **150 vật phẩm cùng lo
 | --- | --- | --- | --- | --- |
 | 1 | Additional Storage II | Mở Port thứ 2 | 500G | Day 4 |
 | 2 | Additional Storage III | Mở Port thứ 3 | 500G | Day 4 |
+| 3 | Additional Storage IV | Mở Port thứ 4 (max) | 1,100G | Day 4 |
 
 > - [ ] **TODO:** Xác định max capacity tối ưu (hiện tại là 150 — *modify later*).
 

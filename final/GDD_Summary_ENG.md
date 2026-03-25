@@ -338,7 +338,7 @@ After 6 breeding cycles:
 |------|----------|------|---------------|-----------------|-------|
 | 🌱 | Garden | Farming | Plant & harvest crops (up to 4 plots) | Auto Harvest, Miracle Mix* | Starts with 1 plot |
 | 🏚 | Silo | Farming | Item storage (150/port, up to 4 ports) | Additional Storage ×3 | Retrieval |
-| 🏞 | Pond | Farming | Natural water source, refills with cooldown | More Water Contain, Decrease Cooldown | Salt Water; Fresh Water (WIP) |
+| 🏞 | Pond | Farming | Natural water source, refills with cooldown | More Water Contain, Decrease Cooldown | Salt Water |
 | 💧 | Water Purifier | Farming | Salt Water → Fresh Water for watering Garden | More Contain, Decrease Purifier Time | Runs during Sleep |
 | ⚗️ | Crafting Station | Farming | Crafts all: Materials, Bottles, Food, Ingredients | Queue +slot, Speed upgrade | Input only, no retrieval |
 | 🐔 | Coop | Farming | Raise Hen/Rooster → Eggs & Meat | High Wall, Expand Coop (→12) | Max 6 → 12 chickens |
@@ -396,7 +396,7 @@ Crafts everything: Materials, Bottles, Food Ingredients, Foods. Queue up to 3/5/
 
 ### 🏞 Pond
 
-Natural Salt Water source (Fresh Water is a Upgrade option — WIP). Auto-refills with cooldown. Supplies water to the Water Purifier. Demolish required.
+Natural Salt Water source. Auto-refills with cooldown. Supplies water to the Water Purifier. Demolish required.
 
 | # | Upgrade |
 |---|---------|
@@ -406,7 +406,7 @@ Natural Salt Water source (Fresh Water is a Upgrade option — WIP). Auto-refill
 | 4 | Decrease Cooldown II |
 | 5 | More Water Contain III |
 | 6 | Decrease Cooldown III |
-| 7 | Fresh Water (WIP) — Unlock via Unlock Events |
+
 
 ### 💧 Water Purifier
 
