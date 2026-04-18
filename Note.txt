@@ -4,7 +4,7 @@ Update
 https://notebooklm.google.com/notebook/a737ade8-2d7e-4871-91f2-59fb8dbbf9a3?addSource=true
 machinations.io
 
-17/4 done flow addressable data
+19/4 done flow addressable data
 23/4 done ui, game flow, ai,...
 27/4 done game design polish save load
 3/5 done full workflow document optimize extmax7d
@@ -15,62 +15,8 @@ machinations.io
 --24/5 w2 ext31
 *backup extend to 7d
 
-
-Durian: 13 unlock
-
-Remove Wood Stone Ruby 
-
-cephalotaxus fortunei -> Cephalotaxus Fortunei
-
-Các thảo dược mới thêm. như Heartleaf Gelsemium Guarana Pine Hippomane mancinella Cephalotaxus Fortunei hay Beetroot
-đều là cây trồng nhưng có thể tìm được ở trong tự nhiên khác với các loại cây chính (có component attacking) ko có trong tự nhiên
-Trong Source loại bỏ Mine Grown hay Chop, chỉ giữ lại là Collect - Môi trường vì game chỉ có hoạt động collect ko có chop mine cụ thể
-
-Red Alert Salad đổi tên thành Hell Breath Mashed và có công thức mới là:
-6xDurian 3xMargarine 9xChili
-
-Sweet Grapeball đổi công thức là  Grape ×6 +  Sugar ×3 +  Flour ×6
-Hot Bunny đổi tên là Bunny Burger có công thức mới là Carrot ×6 + Margarine ×3 + Bread ×3
-
-Noni vẫn là WIP Day20 Thêm quả Pomegranate WIP Day20
-
-Atropine Bottle nên chuyển giảm fog zoomin thànhtawng và zoom out làm trade off
-
-Phorbol Bottle đổi stack damage sang stack 5 stack thì bắn xuyên kẻ đich tác động phía sau (chỉ xuyên enemy thôi) range xuyên là rang từ player->enemy x 1.2
-
-Các bottle có tác dụng cùng lúc hay phối hợp đc với nhau nhưng chỉ cung lúc đc 2 bottle
-
-Fortunei bottle: Remove Kill Bonus
-Fragment Heal và Buff cùng random khi bị kết liễu bởi smoke
-
-Bỏ Acid Shard
-
-Poison Shard lấy công thức 🌿 Heartleaf Gelsemium ×3 + 🌱 cephalotaxus fortunei ×3 + 🌑 Belladonna ×3
-
-Glass level2 sẽ có công thức là 3 glass level1 còn level 3 là 3 glass level2 bỏ ruby
-
-remove Circuit
-
-Đổi công thức(dứoi đây dùng tên cũ nếu có yêu cầu đổi tên mới bên trên thì tự update)
-
-Cabbage Sauce có công thức mới là 🥬 Cabbage ×6 + 🍬 Sugar ×1
-
-Omelet là 3x3 Egg thay vì 3x6
-
-Soggy Bread  là 🥐 Flour ×3 + 💀 Monster Meat ×6
-
-Burger Berry 🍞 Bread ×1 + 🥬 Cabbage ×3 + 🫐 Berry ×9
-
-Carrot Cake 🥕 Carrot ×6 + 🥛 Coconut Milk ×3 + 🍬 Sugar ×3
-
-Tomato Soup 🍅 Tomato ×6 + 🧈 Margarine ×3 + 🍬 Sugar ×3
-
-Burnwich 🥐 Flour ×3 + 🌶️ Chili ×9 + 🥣 Cabbage Sauce ×3
-
-Carambola Cake ⭐ Carambola ×6 + 🥛 Coconut Milk ×3 + 🥣 Cabbage Sauce ×3
-
-Apple Pie 🍎 Apple ×3 + 🥐 Flour ×3 + 🍦 Cream ×3
-
-Hot and Sour Salad 🍅 Tomato ×9 + ⭐ Carambola ×3 + 🫑 Pepper x3
-
-Tính lại Usage Balance và  viết lại Key balance notes:
+Schedule:
+Addressable (tạm thời vừa làm vừa update và edit doc, follow rule cũ). Ưu tiên update lại các file này để setup addressable trong project nhanh hơn
+DataSpec, SO (tạo SO mẫu cùng các prefab/SO/Script trươc trong project sau đó test import trước khi update toàn bộ flow vào Data Binding)
+Update MD/HTML, Unlock_Timeline,..
+GDD

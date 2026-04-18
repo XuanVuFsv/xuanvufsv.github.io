@@ -1,6 +1,6 @@
-# GDD — Crop Shooter Version 300326
+# GDD — Crop Shooter Version 180426 (Recipe) Updating Web
 
-> **Version:** 300326 | **Status:** In Development | **Sections:** Day/Night Cycle · Core Loop · Timeline · Crops · Recipes · Bottles · Coop · Buildings · Lab · Base · Achievements
+> **Version:** 180426- | **Status:** In Development | **Sections:** Day/Night Cycle · Core Loop · Timeline · Crops · Recipes · Bottles · Coop · Buildings · Lab · Base · Achievements
 
 ---
 
@@ -18,7 +18,8 @@
 10. [Farming Buildings](#09-farming-buildings)
 11. [Science Lab](#10-science-lab)
 12. [Base Construction](#11-base-construction)
-13. [Achievement System](#12-achievement-system)
+13. [Usage Balance](#11b-usage-balance--item-consumption-reference)
+14. [Achievement System](#12-achievement-system)
 
 ---
 
@@ -27,7 +28,7 @@
 ### ☀️ Day Phase — 7 AM – 7 PM
 
 - 🌾 Farm crops, water the garden, harvest
-- ⛏ Mine resources (caves, ruins)
+- 🌿 Collect natural resources at Biomes (River, Forest, Caves, Mountains)
 - 🏗 Build, upgrade, craft
 - 🍳 Cook food, craft Bottles at the Crafting Station
 - 💰 Sell at the Farm Market
@@ -39,8 +40,8 @@
 - ⚔️ Monster waves attack your base
 - 🔫 Use Crop Turret + player weapons to defend
 - 💰 Collect Granumz & resource drops from kills
-- 🌿 Night farming is possible — caves/ruins stay accessible
-- ⚠️ Higher risk but richer loot in deeper zones at night
+- 🌿 Night foraging is possible — Biome nodes stay accessible
+- ⚠️ Higher risk but richer loot in deeper Biomes at night
 
 ### 💤 Sleep Phase
 
@@ -58,7 +59,7 @@
 🌾 Farm → ⚗️ Process → 🎒 Prepare → ⚔️ Fight → 🏗️ Upgrade
 ```
 
-**Farm:** Mine resources, prepare energy, filter water, plant and harvest crops
+**Farm:** Collect natural resources at Biomes, prepare energy, filter water, plant and harvest crops
 
 **Process:** Process ingredients, cook food, craft Bottles
 
@@ -80,151 +81,195 @@ Each crop can be used as:
 - 💰 Sold at the Farm Market for Granumz
 - 🐔 Chicken feed
 
+**Ammo types by crop:** 🫐 Berry → AR · 🌾 Wheat → SMG · 🌱 Bean → SMG · 🥥 Coconut → Grenade · 🍅 Tomato → Shotgun · 🍇 Grape → (special) · ⭐ Carambola → Sniper · 🌶️ Chili → Flamethrower · 🍎 Apple → Grenade · 🫑 Pepper → Toxic Grenade
+
 ---
 
 ## 03 Progression — Unlock Timeline
 
 | Day | Event | Unlocks |
 |-----|-------|---------|
-| **1** | Starting gear | 🫐 Berry (AR), 🌾 Wheat (SMG), ⚡ Power Shard, 🔩 Iron/Copper, 🪵 Wood/Stone/Sand, 💀 Monster Meat (night drop), 🏠 Farm House, 💰 Farm Market, 🎒 Gear Upgrades, 🔗 Refinery, 🌱 Garden, 💧 Water Purifier, ⚗️ Crafting Station |
-| **2** | First discoveries | 🪨 Coal vein (shallow caves), 🧱 Metal Scrap (ruins), 💎 Treasure Pod #1 |
-| **3** | New crops & ingredients | 🌱 Bean (SMG ammo), 🥕 Carrot, 🥬 Cabbage, 🥥 Coconut, 🛢️ Bean Oil, 🧴 Coconut Oil, 🧈 Margarine (Bean Oil×3 + Coconut Oil×1) |
+| **1** | Starting gear | 🫐 Berry (AR), 🌾 Wheat (SMG), ⚡ Power Shard *(Collect — River/Mud, fixed node)*, 🟡 Silica Sand *(Collect — River/Sand, fixed node)*, 💀 Monster Meat *(night drop)*, 🏠 Farm House, 💰 Farm Market, 🎒 Gear Upgrades, 🔗 Refinery, 🌱 Garden, 💧 Water Purifier, ⚗️ Crafting Station, 🔋 Power Core *(Power Shard ×3)*, 🥐 Flour |
+| **2** | First discoveries | 💎 Treasure Pod #1 — opens new resource nodes on map |
+| **3** | New crops & ingredients | 🌱 Bean (SMG ammo), 🥕 Carrot (Rocket-coding like grenade - just config gravity scale and friction,...) *(Trigger: Defeat 100 enemies — can unlock earlier)*, 🥬 Cabbage, 🥥 Coconut (AR-Pushback) *(Trigger: Open a Treasure Pod)*, 🛢️ Bean Oil, 🧴 Coconut Oil, 🥛 Coconut Milk, 🧈 Margarine |
 | **4** | New construction | 🏚 Silo, 🏪 Builder's Shop, ⛏️ Drill Gadget Lv1 |
-| **5** | First expansion | 🫚 Beetroot → Sugar, 🧪 Glass Vial Lv1 (9 Sand), 🍞 Bread +5HP, 🥖 Soggy Bread +30HP **STEALTH**, 🎂 Berry Cake +20HP, 🧊 Frost Bottle |
-| **6** | Tomato + Cabbage Sauce | 🍅 Tomato (Shotgun) *[🗡 Kill 300 monsters]*, 🥣 Cabbage Sauce, 🍔 Burger Berry +25HP, ⚡ Rapidfire Bottle |
-| **7** | 🏞 Pond, 🚰 Water Pump, 🐝 Apiary, 🍯 Honey (Apiary Gadget) *[🤖 Place first Apiary]*, 🐔 Coop (no blueprint needed), 🐔 Expand Coop (6 → 12), 🍳 Omelet +25HP |
-| **8** | Grape & mid-game food | 🍇 Grape *[📦 Open Treasure Pod]*, 🌿 Spring Grass upgrade (Coop), 🥪 Hot Bunny +15HP, 🧁 Carrot Cake +40HP, 🍡 Sweet Grapeball +20HP → Cluster Bottle |
-| **10** | Mid game | ⭐ Carambola (Sniper) *[⚔️ Defeat first Boss]*, 🌶️ Chili (Flamethrower), 🖤 Coal (caves), 🍦 Cream, 🍲 Tomato Soup +75HP → Crit Bottle, 🤖 Crop Turret (blueprint) |
-| **11** | Automation begins | 🎯 Crit Bottle |
-| **13** | Mid-late food & bottles | 🌭 Burnwich +35HP → Blaze Bottle, 🔥 Red Alert Salad +50HP → Venom Bottle, 🌟 Carambola Cake +60HP → Arc Bottle |
-| **15** | Late game | 🔗 Refinery Link, 🍎 Apple (Grenade), 🫑 Pepper (Toxic Grenade), 💎 Ruby (deep caves), 🔬 Glass Vial Lv2, ☠️ Poison Shard / Acid Shard, 💥 Cluster Bottle |
-| **16** | Pre-endgame | 🚀 Ap-pleClear Ca-Rotket (Special), 🥧 Apple Pie +100HP, 🥗 Fresh Salad +150HP → Corrosion Bottle, 🍰 Honey Cake +80HP → Miasma Bottle, 🟢 Corrosion Bottle, 💊 Vitamizer, 🔫 Turret Link |
+| **5** | First expansion | 🫚 Beetroot → Sugar, 🧪 Glass Vial Lv1 *(Silica Sand ×9)*, ❄️ Snowflake *(Collect — Snow Mountains)*, 🍞 Bread +5HP, 🥖 Soggy Bread +30HP **STEALTH**, 🎂 Berry Cake +20HP, 🧊 Frosteratrol Bottle |
+| **6** | Tomato + Cabbage Sauce | 🍅 Tomato (Shotgun) *[⚔️ Kill first Boss]*, 🥣 Cabbage Sauce, 🍔 Burger Berry +25HP, ⚡ Burstger Bottle *[requires 🌱 Ginseng *(Collect — Mountain)*]* |
+| **7** | Pond, Apiary, Coop | 🏞 Pond, 🚰 Water Pump, 🐝 Apiary, 🍯 Honey *(Trigger: Place first Apiary)*, 🐔 Coop *(no blueprint needed)*, 🐔 Expand Coop (6 → 12), 🍳 Omelet +25HP, 🥚 Egg *(Trigger: Build Coop)* |
+| **8** | Grape & mid-game food | 🍇 Grape (Power up version of Berry), 🌿 Spring Grass upgrade (Coop), 🥪 Bunny Burger +30HP *(Ap-pleClear 1/3)*, 🧁 Carrot Cake +40HP *(Ap-pleClear 2/3)*, 🍡 Sweet Grapeball +30HP → Dynamite Bottle |
+| **10** | Mid game | ⭐ Carambola (Sniper) *[🗡 Kill 500 monsters — can unlock earlier]*, 🌶️ Chili (Flamethrower - DOT- Multi Target) *[📦 Open a Treasure Pod]*, 🍦 Cream, 🍲 Tomato Soup +75HP → Critical Souper, 🤖 Crop Turret *(blueprint)* |
+| **11** | Automation begins | 🎯 Critical Souper *(ingredient:🟤 Guarana *(Collect — River)*)* |
+| **13** | Durian, Petroleum, Mid-late food | 🌵 Durian *(WIP)*, 🛢️ Petroleum *[🔩 Drill — không có sẵn tự nhiên]*, 🌑 Belladonna *(Collect — Forest/Stone)*, 🌭 Burnwich +35HP → Capsaicin Bottle, 🔥 Hell Breath Mashed +50HP → Atropine Bottle, 🌟 Carambola Cake +60HP → Voltaic Bottle |
+| **15** | Late game | 🔗 Refinery Link, 🍎 Apple (Grenade - Like Launcher), 🫑 Pepper (Toxic Grenade - Add noise to enemy path finding logic) *[⚔️ Defeat third Boss]*, 🌲 Pine *(Collect — Forest)*, 🔬 Glass Vial Lv2 *(Vial Lv1 ×3)*, 💥 Dynamite Bottle *[requires 🌲 Pine]* |
+| **16** | Pre-endgame | 🚀 Ap-pleClear Ca-Rotket (Special), 🥧 Apple Pie +100HP, 🥗 Hot and Sour Salad +150HP → Phorbol Bottle, 🌿 Hippomane mancinella *(Collect — River)*, 🍰 Honey Cake +80HP → Fortunei Bottle, 🟢 Phorbol Bottle, 💊 Vitamizer, 🔫 Turret Link |
 | **18** | Market Link Available | 🔗 Market Link |
-| **20** | End game | 🌵 Durian *(WIP)*, 🍈 Noni Fruit *(WIP)*, 💛 Gold Crystal (mountains), ⚗️ Glass Vial Lv3, 🌩️ Arc Bottle |
-| **21** | Final unlock | ☁️ Miasma Bottle |
+| **20** | End game | 🍈 Noni Fruit *(WIP)*, 🍑 Pomegranate *(WIP) (6 bullet/time - high firerate)*, 💛 Voltanic Crystal *(Collect — Caves)*, 🌱 Cephalotaxus Fortunei *(Collect — Forest)*, ⚗️ Glass Vial Lv3 *(Vial Lv2 ×3)*, 🌩️ Voltaic Bottle |
+| **21** | Final unlock | 🌿 Heartleaf Gelsemium *(Collect — Mountains)*, ☠️ Poison Shard *(3 herbs)*, ☁️ Fortunei Bottle |
 
 ---
 
 ## 04 Crops
 
-| Icon | Name | Unlock | Trigger | Weapon | Yield | Used For |
-|------|------|--------|---------|--------|-------|----------|
-| 🫐 | Berry | Day 1 | — | AR | 1 crop | Ammo, Frost Bottle |
-| 🌾 | Wheat *(1 bundle = 3 units)* | Day 1 | — | SMG | 3/bundle | Ammo, Flour, Chicken Feed |
-| 🌱 | Bean | Day 3 | — | SMG | 1 crop | Ammo, Bean Oil |
-| 🥕 | Carrot | Day 3 | — | — | 1 crop | Hot Bunny, Carrot Cake, Red Alert Salad |
-| 🥬 | Cabbage | Day 3 | — | — | 1 crop | Cabbage Sauce, Burger Berry |
-| 🥥 | Coconut | Day 3 | — | — | 1 crop | Coconut Oil, Coconut Milk |
-| 🫚 | Beetroot | Day 5 | — | — | 1 crop | Sugar (9 beet = 1 sugar) |
-| 🍇 | Grape | Day 8 | 📦 Open Treasure Pod | (special) | 1 crop | Ammo, Sweet Grapeball, Cluster Bottle |
-| 🍅 | Tomato | Day 6 | 🗡 Kill 300 monsters | Shotgun | 1 crop | Ammo, Tomato Soup, Red Alert Salad → Crit Bottle |
-| ⭐ | Carambola | Day 10 | ⚔️ Defeat first Boss | Sniper | 1 crop | Ammo, Carambola Cake, Fresh Salad, Arc Bottle |
-| 🌶️ | Chili | Day 10 | — | Flamethrower | 1 crop | Ammo, Burnwich, Red Alert Salad, Blaze Bottle |
-| 🍎 | Apple | Day 15 | — | Grenade | 1 crop | Ammo, Apple Pie, Ap-pleClear |
-| 🫑 | Pepper | Day 15 | — | Toxic Grenade | 1 crop | Ammo, Fresh Salad, Venom Bottle |
-| 🌵 | Durian *(WIP)* | Day 20 | — | — | 1 crop | Miasma Bottle |
-| 🍈 | Noni Fruit *(WIP)* | Day 20 | — | — | 1 crop | Corrosion Bottle (legacy) |
+> **Phân loại nguồn gốc:**
+> - 🌿⚔️ **Crop (Trồng trọt)** — Có được qua canh tác (Harvesting). Không xuất hiện tự nhiên. **Chứa component attacking**.
+> - 🌿 **Crop / Wild** — Có thể canh tác hoặc tìm thấy tự nhiên (Collect). **Không chứa component attacking**.
 
-> ⚠️ **Wheat dual-use:** 1 bundle = 3 SMG ammo OR 1 Flour. Recommended split: ~2 bundles ammo / 1 bundle food / 1 bundle chicken feed (4 Garden plots).
+| Icon | Name | Unlock Day | Trigger | Type | Weapon | Yield | Used For |
+|------|------|-----------|---------|------|--------|-------|----------|
+| 🫐 | Berry | Day 1 | — | 🌿⚔️ | AR | 1 crop | Ammo, Frosteratrol Bottle |
+| 🌾 | Wheat *(1 bundle = 3 units)* | Day 1 | — | 🌿⚔️ | SMG | 3/bundle | Ammo, Flour, Chicken Feed |
+| 🌱 | Bean | Day 3 | — | 🌿⚔️ | SMG | 1 crop | Ammo, Bean Oil |
+| 🥕 | Carrot | Day 3 | ⚔️ Defeat first 100 enemies *(can unlock earlier)* | 🌿⚔️ | — | 1 crop | Bunny Burger, Carrot Cake, Hot and Sour Salad |
+| 🥬 | Cabbage | Day 3 | — | 🌿 | — | 1 crop | Cabbage Sauce, Burger Berry |
+| 🥥 | Coconut | Day 3 | 📦 Open a Treasure Pod | 🌿⚔️ | Grenade | 1 crop | Ammo, Coconut Oil, Coconut Milk |
+| 🫚 | Beetroot | Day 5 | — | 🌿 | — | 1 crop | Sugar *(9 Beetroot = 1 Sugar)* |
+| 🍅 | Tomato | Day 6 | ⚔️ Defeat first Boss | 🌿⚔️ | Shotgun | 1 crop | Ammo, Tomato Soup, Hot and Sour Salad |
+| 🍇 | Grape | Day 8 | — | 🌿⚔️ | (special) | 1 crop | Ammo, Sweet Grapeball → Dynamite Bottle |
+| ⭐ | Carambola | Day 10 | 🗡 Kill 500 monsters *(can unlock earlier)* | 🌿⚔️ | Sniper | 1 crop | Ammo, Carambola Cake, Hot and Sour Salad → Voltaic Bottle |
+| 🌶️ | Chili | Day 10 | 📦 Open a Treasure Pod | 🌿⚔️ | Flamethrower | 1 crop | Ammo, Burnwich, Hell Breath Mashed → Capsaicin Bottle |
+| 🌵 | Durian *(WIP)* | Day 13 | — | 🌿⚔️ | TBD | 1 crop | Hell Breath Mashed → Atropine Bottle |
+| 🍎 | Apple | Day 15 | — | 🌿⚔️ | Grenade | 1 crop | Ammo, Apple Pie, Ap-pleClear |
+| 🫑 | Pepper | Day 15 | ⚔️ Defeat third Boss | 🌿⚔️ | Toxic Grenade | 1 crop | Ammo, Hot and Sour Salad → Phorbol Bottle |
+| 🍈 | Noni Fruit *(WIP)* | Day 20 | 🗡 Kill 1000 monsters *(can unlock earlier)* | 🌿⚔️ | TBD | 1 crop | TBD |
+| 🍑 | Pomegranate *(WIP)* | Day 20 | 📦 Open a Treasure Pod | 🌿⚔️ | TBD | 1 crop | TBD |
+
+> ⚠️ **Wheat dual-use:** 1 bundle type = 3 SMG ammo. Recommended split strategy: ~2 bundles ammo / 1 bundle food / 1 bundle chicken feed.
 >
-> **Beetroot replaces Sugar Cane:** Sugar is now crafted from 9 Beetroot (3×3). Sugar Cane has been removed from the game.
+> **Beetroot replaces Sugar Cane (WIP):** Sugar is now crafted from 9 Beetroot (3×3).
+>
+> **Removed from all recipes:** Circuit, Wood, Stone, Ruby, Metal Scrap, Iceron, Coal, Acid Shard — dependency khai thác cũ đã bị loại bỏ hoàn toàn.
 
 ---
 
 ## 05 Recipes — Crafting Station
 
-## Recipe Slot Rules (3 slots)
+### Recipe Slot Rules (3 slots)
 
 - Quy tắc ingame: **Mọi recipe luôn phải có đúng 3 slot** (3 cụm `Item ×N`).
 - Nếu recipe chỉ có **2 thành phần** `A×m + B×n`, hãy **tách 1 thành phần** thành 2 slot để đủ 3:
     - `A×m + B×n` → `A×a + B×n + A×(m−a)` (với `1 ≤ a < m`)
-- Ưu tiên tách thành phần có số lượng lớn hơn / dễ chia hơn.
 - Ví dụ:
     - `🍇 Grape ×16 + 🍬 Sugar ×1` → `🍇 Grape ×8 + 🍬 Sugar ×1 + 🍇 Grape ×8`
     - `🛢️ Bean Oil ×3 + 🧴 Coconut Oil ×1` → `🛢️ Bean Oil ×2 + 🧴 Coconut Oil ×1 + 🛢️ Bean Oil ×1`
-    - `🧪 Vial Lv1 ×2 + 💎 Ruby ×2` → `🧪 Vial Lv1 ×1 + 💎 Ruby ×2 + 🧪 Vial Lv1 ×1` (hoặc tách Ruby tương tự)
+
+---
+
+### Natural Resources & Wild Drops
+
+> Không có yếu tố attacking — thu thập tự do qua Collect tại Biome, không bị chặn bởi achievement hoặc event.
+
+| Icon | Name | Type | Unlock | Source / Biome |
+|------|------|------|--------|----------------|
+| 💀 | Monster Meat | Drop | Day 1 | 👾 Night wave drop |
+| ⚡ | Power Shard | Wild | Day 1 | Collect — River *(Mud/Sand deposit, fixed node, không thể phá)* |
+| 🟡 | Silica Sand | Wild | Day 1 | Collect — River *(Sand deposit, fixed node, không thể phá)* |
+| ❄️ | Snowflake | Wild | Day 5 | Collect — Snow Mountains |
+| 🌱 | Ginseng | Wild | Day 6 | Collect — River |
+| 🥚 | Egg | Coop | Day 7 | 🐔 Coop reproduction *(Trigger: Build Coop)* |
+| 🍯 | Honey | Coop | Day 7 | 🤖 Apiary Gadget *(Trigger: Place first Apiary)* |
+| 🟤 | Guarana | Wild | Day 11 | Collect — River |
+| 🌑 | Belladonna | Wild | Day 13 | Collect — Forest *(Stone area)* |
+| 🛢️ | Petroleum | Drill | Day 13 | 🔩 Drill construction *(phải xây — không có sẵn tự nhiên)* |
+| 🌲 | Pine | Wild | Day 15 | Collect — Forest / Mountains *(Snow area; chứa Colophony)* |
+| 🌿 | Hippomane mancinella | Wild | Day 16 | Collect — River |
+| 💛 | Voltanic Crystal | Wild | Day 20 | Collect — Caves |
+| 🌱 | Cephalotaxus Fortunei | Wild | Day 20 | Collect — Forest |
+| 🌿 | Heartleaf Gelsemium | Wild | Day 21 | Collect — Mountains |
+
+---
 
 ### Resource Ingredients / Vials
 
-| Output | Ingredients | Notes | Unlock |
-|--------|-------------|-------|--------|
-| 🔋 Power Core | Power Shard + Metal Scrap + Iron | Unlocks basic structures | Day 0 |
-| 💡 Circuit | Power Shard + Metal Scrap + Copper | Unlocks electronic structures | Day 0 |
-| 🧪 Glass Vial Lv1 | Sand ×9 | Craft Tier 1–2 Bottles | Day 5 |
-| 🔬 Glass Vial Lv2 | Vial Lv1 ×2 + Ruby ×2 | Craft Tier 3 Bottles | Day 15 |
-| ⚗️ Glass Vial Lv3 | Vial Lv2 ×2 + Gold Crystal ×2 | Craft Tier 4 Bottles | Day 20 |
-| ☠️ Poison Shard | Trash ×6 + Sand ×3 | For Miasma Bottle | Day 15 |
-| 💧 Acid Shard | Trash ×6 + Metal Scrap ×3 | For Corrosion (legacy) | Day 15 |
+| Output | Slot 1 | Slot 2 | Slot 3 | Notes | Unlock |
+|--------|--------|--------|--------|-------|--------|
+| 🔋 Power Core | ⚡ Power Shard ×1 | ⚡ Power Shard ×1 | ⚡ Power Shard ×1 | Fixed node Day 1. Không cần Metal Scrap | Day 1 |
+| 🧪 Glass Vial Lv1 | 🟡 Silica Sand ×3 | 🟡 Silica Sand ×3 | 🟡 Silica Sand ×3 | Craft Tier 1–2 Bottles | Day 5 |
+| 🔬 Glass Vial Lv2 | 🧪 Vial Lv1 ×1 | 🧪 Vial Lv1 ×1 | 🧪 Vial Lv1 ×1 | Craft Tier 3 Bottles | Day 15 |
+| ⚗️ Glass Vial Lv3 | 🔬 Vial Lv2 ×1 | 🔬 Vial Lv2 ×1 | 🔬 Vial Lv2 ×1 | Craft Tier 4 Bottles | Day 20 |
+| ☠️ Poison Shard | 🌿 Heartleaf Gelsemium ×3 | 🌱 Cephalotaxus Fortunei ×3 | 🌑 Belladonna ×3 | Cho Fortunei Bottle | Day 21 |
+
+> **Glass Vial progression** hoàn toàn tuyến tính: Silica Sand → Lv1 → ×3 Lv2 → ×3 Lv3. Không còn phụ thuộc Ruby hay Gold Crystal.
+> **Đã xoá hoàn toàn:** 💡 Circuit · 💧 Acid Shard · 💎 Ruby · 💛 Gold Crystal *(trong recipe context)*.
+
+---
 
 ### Food Ingredients
 
-| Output | Ingredients | Used In | Unlock |
-|--------|-------------|---------|--------|
-| 🥐 Flour | Wheat ×9 | Bread, Berry Cake, Apple Pie… | Day 1 |
-| 🍬 Sugar | Beetroot ×9 | Many foods & bottles | Day 5 |
-| 🥛 Coconut Milk | Coconut ×9 | Cream, Carrot Cake… | Day 3 |
-| 🛢️ Bean Oil | Bean ×9 | Margarine | Day 3 |
-| 🧴 Coconut Oil | Coconut ×9 | Margarine | Day 3 |
-| 🧈 Margarine | Bean Oil ×3 + Coconut Oil ×1 | Tomato Soup, Burnwich | Day 3 |
-| 🥣 Cabbage Sauce | Cabbage ×8 + Sugar ×1 | Burnwich, Carambola Cake | Day 6 |
-| 🍦 Cream | Coconut Milk ×3 + Sugar ×1 + Egg ×6 | Apple Pie | Day 10 |
+| Output | Slot 1 | Slot 2 | Slot 3 | Used In | Unlock |
+|--------|--------|--------|--------|---------|--------|
+| 🥐 Flour | 🌾 Wheat ×3 | 🌾 Wheat ×3 | 🌾 Wheat ×3 | Bread, Berry Cake, Apple Pie… | Day 1 |
+| 🛢️ Bean Oil | 🌱 Bean ×3 | 🌱 Bean ×3 | 🌱 Bean ×3 | Margarine | Day 3 |
+| 🧴 Coconut Oil | 🥥 Coconut ×3 | 🥥 Coconut ×3 | 🥥 Coconut ×3 | Margarine | Day 3 |
+| 🥛 Coconut Milk | 🥥 Coconut ×3 | 🥥 Coconut ×3 | 🥥 Coconut ×3 | Cream, Carrot Cake, Honey Cake | Day 3 |
+| 🧈 Margarine | 🛢️ Bean Oil ×2 | 🧴 Coconut Oil ×1 | 🛢️ Bean Oil ×1 | Tomato Soup, Burnwich, Bunny Burger | Day 3 |
+| 🍬 Sugar | 🫚 Beetroot ×3 | 🫚 Beetroot ×3 | 🫚 Beetroot ×3 | Many foods & bottles | Day 5 |
+| 🥣 Cabbage Sauce | 🥬 Cabbage ×3 | 🍬 Sugar ×1 | 🥬 Cabbage ×3 | Burnwich, Carambola Cake | Day 6 |
+| 🍦 Cream | 🥛 Coconut Milk ×3 | 🍬 Sugar ×1 | 🥚 Egg ×6 | Apple Pie | Day 10 |
+
+---
 
 ### Foods
 
-| Output | Ingredients | HP / Effect | Unlock |
-|--------|-------------|-------------|--------|
-| 🍞 Bread | Flour + Sugar + Flour | +5 HP | Day 5 |
-| 🍳 Omelet | Egg ×18 | +25 HP · REGEN | Day 7 |
-| 🎂 Berry Cake | Flour + Berry ×8 + Sugar | +20 HP → Frost Bottle | Day 5 |
-| 🥖 Soggy Bread | Flour + Monster Meat ×4 | +30 HP · STEALTH (monsters ignore you temporarily) | Day 5 |
-| 🍔 Burger Berry | Flour + Cabbage ×4 + Berry ×8 | +25 HP → Rapidfire Bottle | Day 6 |
-| 🥪 Hot Bunny | Carrot ×4 (2×2) + Margarine ×1 | +15 HP · Ap-pleClear 1/3 | Day 8 |
-| 🍡 Sweet Grapeball | Grape ×16 + Sugar ×1 | +20 HP → Cluster Bottle | Day 8 |
-| 🧁 Carrot Cake | Carrot ×5 + Coconut Milk ×3 + Sugar ×1 | +40 HP · Ap-pleClear 2/3 | Day 8 |
-| 🍲 Tomato Soup | Tomato ×8 + Margarine ×1 + Sugar ×1 | +75 HP (+5/s×10s) → Crit Bottle | Day 10 |
-| 🌭 Burnwich | Flour + Chili ×8 + Cabbage Sauce ×1 | +35 HP → Blaze Bottle | Day 13 |
-| 🔥 Red Alert Salad | Chili ×8 + Tomato ×8 + Carrot ×4 | +50 HP → Venom Bottle | Day 13 |
-| 🌟 Carambola Cake | Carambola ×10 + Coconut Milk ×3 + Cabbage Sauce ×1 | +60 HP → Arc Bottle | Day 13 |
-| 🥧 Apple Pie | Apple ×10 + Flour ×1 + Cream ×1 | +100 HP · Ap-pleClear 3/3 | Day 16 |
-| 🍰 Honey Cake | Honey ×6 + Flour ×1 + Coconut Milk ×3 | +80 HP → Miasma Bottle | Day 16 |
-| 🥗 Fresh Salad | Tomato ×8 + Carambola ×10 + Pepper ×10 | +150 HP (+15/s×10s) → Corrosion Bottle | Day 16 |
+| Output | Slot 1 | Slot 2 | Slot 3 | HP / Effect | Unlock |
+|--------|--------|--------|--------|-------------|--------|
+| 🍞 Bread | 🥐 Flour ×1 | 🍬 Sugar ×1 | 🥐 Flour ×1 | +5 HP | Day 5 |
+| 🥖 Soggy Bread | 🥐 Flour ×3 | 💀 Monster Meat ×6 | 🥐 Flour ×3 | +30 HP · **STEALTH** | Day 5 |
+| 🎂 Berry Cake | 🥐 Flour ×1 | 🫐 Berry ×8 | 🍬 Sugar ×1 | +20 HP → Frosteratrol Bottle | Day 5 |
+| 🍔 Burger Berry | 🍞 Bread ×1 | 🥬 Cabbage ×3 | 🫐 Berry ×9 | +25 HP → Burstger Bottle | Day 6 |
+| 🍳 Omelet | 🥚 Egg ×3 | 🥚 Egg ×3 | 🥚 Egg ×3 | +25 HP · **REGEN** | Day 7 |
+| 🍡 Sweet Grapeball | 🍇 Grape ×6 | 🍬 Sugar ×3 | 🥐 Flour ×6 | +30 HP → Dynamite Bottle | Day 8 |
+| 🥪 Bunny Burger | 🥕 Carrot ×6 | 🧈 Margarine ×3 | 🍞 Bread ×3 | +30 HP · Ap-pleClear 1/3 | Day 8 |
+| 🧁 Carrot Cake | 🥕 Carrot ×6 | 🥛 Coconut Milk ×3 | 🍬 Sugar ×3 | +40 HP · Ap-pleClear 2/3 | Day 8 |
+| 🍲 Tomato Soup | 🍅 Tomato ×6 | 🧈 Margarine ×3 | 🍬 Sugar ×3 | +75 HP ↑ → Critical Souper | Day 10 |
+| 🌭 Burnwich | 🥐 Flour ×3 | 🌶️ Chili ×9 | 🥣 Cabbage Sauce ×3 | +35 HP → Capsaicin Bottle | Day 13 |
+| 🔥 Hell Breath Mashed | 🌵 Durian ×6 | 🧈 Margarine ×3 | 🌶️ Chili ×9 | +50 HP → Atropine Bottle | Day 13 |
+| 🌟 Carambola Cake | ⭐ Carambola ×6 | 🥛 Coconut Milk ×3 | 🥣 Cabbage Sauce ×3 | +60 HP → Voltaic Bottle | Day 13 |
+| 🥧 Apple Pie | 🍎 Apple ×3 | 🥐 Flour ×3 | 🍦 Cream ×3 | +100 HP · Ap-pleClear 3/3 | Day 16 |
+| 🥗 Hot and Sour Salad | 🍅 Tomato ×9 | ⭐ Carambola ×3 | 🫑 Pepper ×3 | +150 HP ↑ → Phorbol Bottle | Day 16 |
+| 🍰 Honey Cake | 🍯 Honey ×6 | 🥐 Flour ×1 | 🥛 Coconut Milk ×3 | +80 HP → Fortunei Bottle | Day 16 |
+
+> ↑ = includes HP regeneration effect
+>REGEN = HOT (Heal overtime), HEAL = instantly
+> **Đổi tên:** Hot Bunny → Bunny Burger · Red Alert Salad → Hell Breath Mashed · Fresh Salad → Hot and Sour Salad
 
 ---
 
 ## 06 Bottle System
 
-**Effect Types:** ❄ Slow · 🔥 Fire · ⚡ Crit · 💥 Damage · 🏃 Speed · 💫 Split · ☠ Poison · ⚡ Chain · 🧪 Corrosion · 🕶 Stealth
+> **⚠️ Cơ chế chung:** Bottle **không** tạo thêm đạn. Hiệu ứng được kích hoạt theo xác suất trên mỗi lượt bắn trúng mục tiêu. **Tối đa 2 bottle hoạt động cùng lúc**.
 
-### Tier 1 — Day 5–6 — Vial Lv1
+### Tier 1 — Day 5–8 — Vial Lv1
 
-| Icon | Name | Effect | Duration | Compatible | Recipe |
-|------|------|--------|----------|-----------|--------|
-| 🧊 | Frost Bottle | ❄ Slow 30–70% · Freeze 30% · +50% dmg if frozen | 12s | SMG, AR | Berry Cake ×8 + Vial Lv1 + Iron ×2 |
-| ⚡ | Rapidfire Bottle | 🏃 +50% fire rate | 8s | AR, SMG, Shotgun | Burger Berry ×8 + Vial Lv1 + Iron ×2 |
+| Icon | Name | Slot 1 | Slot 2 | Slot 3 | Effect Summary | Duration | Compatible |
+|------|------|--------|--------|--------|----------------|----------|-----------|
+| 🧊 | Frosteratrol Bottle | 🎂 Berry Cake ×8 | 🧪 Vial Lv1 ×1 | ❄️ Snowflake ×2 | Slow 30% move · Freeze 10% chance 2.5s · +10/20% dmg amp | 12s | SMG, AR |
+| ⚡ | Burstger Bottle | 🍔 Burger Berry ×8 | 🧪 Vial Lv1 ×1 | 🌱 Ginseng ×2 | +50% fire rate · +10% spread (trade-off) | 7s | AR, SMG, Shotgun |
 
-### Tier 2 — Day 10–13 — Vial Lv1
+### Tier 2 — Day 10–11 — Vial Lv1
 
-| Icon | Name | Effect | Duration | Compatible | Recipe |
-|------|------|--------|----------|-----------|--------|
-| 🎯 | Crit Bottle | ⚡ 100% Crit × 2 dmg | 10s | AR, Shotgun, Sniper | Tomato Soup ×8 + Vial Lv1 + Iron ×2 |
-| 🔆 | Blaze Bottle | 🔥 +30% dmg · fire trail 3/s × 4s | 10s | Flamethrower, AR | Burnwich ×8 + Vial Lv1 + Coal ×2 |
-| 🐍 | Venom Bottle | ☠ Poison cloud 4–10 dmg/s · Lv2: pierce shields | 12s | Toxic Grenade | Red Alert Salad ×8 + Vial Lv1 + Coal ×2 |
+| Icon | Name | Slot 1 | Slot 2 | Slot 3 | Effect Summary | Duration | Compatible |
+|------|------|--------|--------|--------|----------------|----------|-----------|
+| 🎯 | Critical Souper | 🍲 Tomato Soup ×8 | 🧪 Vial Lv1 ×1 | 🟤 Guarana ×2 | 100% Crit ×2 dmg · Headshot ×3.5 total | 7s | AR, Shotgun, Sniper |
 
-### Tier 3 — Day 15–16 — Vial Lv2
+> ⚠️ Critical Souper mở ở Day 11 nhưng ingredient 🌱 Cephalotaxus Fortunei chỉ Collect được từ Day 20 — craftable khi player thu thập được ingredient.
 
-| Icon | Name | Effect | Duration | Compatible | Recipe |
-|------|------|--------|----------|-----------|--------|
-| 💥 | Cluster Bottle | 💫 Split → 3 targets 50% dmg | 8s | Grenade, Shotgun | Sweet Grapeball ×8 + Vial Lv2 + Ruby ×2 |
-| 🟢 | Corrosion Bottle | 🧪 Stack +2/4/6/8/10 dmg · Lv2: pierce shields | 10s | Shotgun, Sniper | Fresh Salad ×10 + Vial Lv2 + Ruby ×2 |
+### Tier 3 — Day 13–16 — Vial Lv1 / Lv2
+
+| Icon | Name | Slot 1 | Slot 2 | Slot 3 | Effect Summary | Duration | Compatible |
+|------|------|--------|--------|--------|----------------|----------|-----------|
+| 🔆 | Capsaicin Bottle | 🌭 Burnwich ×8 | 🧪 Vial Lv1 ×1 | 🛢️ Petroleum ×2 | +30% dmg · fire trail visual · 8% rocket proc 250% dmg | 15s | Flamethrower, AR |
+| 🐍 | Atropine Bottle | 🔥 Hell Breath Mashed ×8 | 🧪 Vial Lv1 ×1 | 🌑 Belladonna ×2 | Stack ×7 max (+140% dmg) · reset on target swap · auto zoom out | 12s | Toxic Grenade |
+| 💥 | Dynamite Bottle | 🍡 Sweet Grapeball ×8 | 🔬 Vial Lv2 ×1 | 🌲 Pine ×2 | 8% bomb proc → AoE 150% dmg 3m after 1.5s | 8s | Grenade, Shotgun |
+| 🟢 | Phorbol Bottle | 🥗 Hot and Sour Salad ×10 | 🔬 Vial Lv2 ×1 | 🌿 Hippomane mancinella ×2 | 50% armor pen · Pierce stack ×5 → bullets penetrate enemies | 10s | Shotgun, Sniper |
 
 ### Tier 4 — Day 20–21 — Vial Lv3
 
-| Icon | Name | Effect | Duration | Compatible | Recipe |
-|------|------|--------|----------|-----------|--------|
-| 🌩️ | Arc Bottle | ⚡ Chain 3 enemies 60% dmg · Lv2: +20%/chain | 8s | SMG | Carambola Cake ×10 + Vial Lv3 + Gold Crystal ×2 |
-| ☁️ | Miasma Bottle | ☠ Cloud 60% density 10 dmg/s · Lv2: 5m AoE | 12s | Grenade | Honey Cake ×8 + Vial Lv3 + Poison Shard ×2 |
+| Icon | Name | Slot 1 | Slot 2 | Slot 3 | Effect Summary | Duration | Compatible |
+|------|------|--------|--------|--------|----------------|----------|-----------|
+| 🌩️ | Voltaic Bottle | 🌟 Carambola Cake ×10 | ⚗️ Vial Lv3 ×1 | 💛 Voltanic Crystal ×2 | Chain 4 targets 60% dmg/chain, ~4m range | 8s | SMG |
+| ☁️ | Fortunei Bottle | 🍰 Honey Cake ×6 | ⚗️ Vial Lv3 ×1 | ☠️ Poison Shard ×3 | 30% smoke proc 10dmg/s 5m AoE 20s · Kill in smoke → Fragment (HEAL or BUFF) | 20s | All weapons |
 
-> **Recipe pattern:** All Bottles use the corresponding food × 8–10 + matching Vial + resource. The "carrier" food determines the Bottle type — players must balance farming food to eat vs. crafting Bottles.
+> **Đổi tên:** Frost→Frosteratrol · Rapidfire→Burstger · Crit→Critical Souper · Blaze→Capsaicin · Venom→Atropine · Cluster→Dynamite · Corrosion→Phorbol · Arc→Voltaic · Miasma→Fortunei
 
 ---
 
@@ -234,9 +279,13 @@ Each crop can be used as:
 
 **Unlock:** Day 16 | **Limit:** One-use / night
 
-**Recipe:** Hot Bunny ×1 + Carrot Cake ×1 + Apple Pie ×1
+| Slot 1 | Slot 2 | Slot 3 |
+|--------|--------|--------|
+| 🥪 Bunny Burger ×1 | 🧁 Carrot Cake ×1 | 🥧 Apple Pie ×1 |
 
-**Effect:** Summons a massive carrot rocket carrying an apple bomb. **Massive AoE** — eliminates all monsters in range. Usable only once per night with a very long cooldown. Requires crafting all 3 components as 3 separate food items (Hot Bunny at Day 8, Carrot Cake at Day 8, Apple Pie at Day 16).
+**Effect:** Summons a massive carrot rocket carrying an apple bomb. Massive AoE — eliminates all monsters in range. One use per night, very long cooldown.
+
+> **Unlock path:** Bunny Burger (1/3, Day 8) → Carrot Cake (2/3, Day 8) → Apple Pie (3/3, Day 16)
 
 ---
 
@@ -357,15 +406,15 @@ After 6 breeding cycles:
 | Icon | Building | Area | Main Function | Notable Upgrades | Notes |
 |------|----------|------|---------------|-----------------|-------|
 | 🌱 | Garden | Farming | Plant & harvest crops (up to 4 plots) | Auto Harvest, Miracle Mix* | Starts with 1 plot |
-| 🏚 | Silo | Farming | Item storage (150/port, up to 3 ports) | Additional Storage ×2 | Retrieval |
+| 🏚 | Silo | Farming | Item storage (150/port, up to 4 ports) | Additional Storage ×3 | Deposit & retrieval |
 | 🏞 | Pond | Farming | Natural water source, refills with cooldown | More Water Contain, Decrease Cooldown | Salt Water |
 | 💧 | Water Purifier | Farming | Salt Water → Fresh Water for watering Garden | More Contain, Decrease Purifier Time | Runs during Sleep |
 | ⚗️ | Crafting Station | Farming | Crafts all: Materials, Bottles, Food, Ingredients | Queue +slot, Speed upgrade | Input only, no retrieval |
 | 🐔 | Coop | Farming | Raise Hen/Rooster → Eggs & Meat | High Wall, Expand Coop (→12) | Max 6 → 12 chickens |
 | 🔬 | Refinery | Science Lab | Central storage hub — deposit only | — | Cannot retrieve |
-| 🏪 | Builder's Shop | Science Lab | Purchase blueprints with Granumz | — | Some blueprints from Treasure Pods or Unlock Events |
+| 🏪 | Builder's Shop | Science Lab | Purchase blueprints with Granumz | — | Some blueprints from Treasure Pods |
 | 🔧 | Fabricate Gadget | Science Lab | Craft & place Gadgets on the map | — | Holds 1 Gadget at a time |
-| 💰 | Farm Market | Science Lab | Sell items for Granumz | +5% Sell Value ×2 (WIP) | Prices fluctuate via Perlin Noise |
+| 💰 | Farm Market | Science Lab | Sell items for Granumz | +5% Sell Value ×2 | Prices fluctuate via Perlin Noise |
 | 🏠 | Farm House | Base | Sleep to skip — restores HP & Energy | — | Sleeping early loses night farming time |
 | 🎒 | Gear Upgrades | Base | Upgrades player stats | Heart / Water / Boost / Backpack Module | Bound to the character |
 | 📦 | Treasure Pod | Map | Granumz + crops + blueprints | — | Fixed locations, requires skill |
@@ -412,7 +461,7 @@ Crafts everything: Materials, Bottles, Food Ingredients, Foods. Queue up to 3/5/
 | 1 | Queue Expand I — +2 recipe slots |
 | 2 | Craft Speed I — reduces craft time |
 | 3 | Queue Expand II — +2 recipe slots |
-| 4 | Craft Speed II | reduces craft time
+| 4 | Craft Speed II — reduces craft time |
 
 ### 🏞 Pond
 
@@ -426,7 +475,6 @@ Natural Salt Water source. Auto-refills with cooldown. Supplies water to the Wat
 | 4 | Decrease Cooldown II |
 | 5 | More Water Contain III |
 | 6 | More Water Contain IV |
-
 
 ### 💧 Water Purifier
 
@@ -475,15 +523,15 @@ Sell crops and items for Granumz — the main currency. Dynamic pricing system: 
 | # | Upgrade | Effect |
 |---|---------|--------|
 | 1 | Sell Value +5% (round 1) | Blueprint purchased at Builder's Shop |
-| 2 | Sell Value +5% (round 2) | Total max +10% sell value (Unlock via Unlock Events) |
+| 2 | Sell Value +5% (round 2) | Total max +10% sell value *(Unlock via Unlock Events)* |
 
 ### Gadgets (crafted via Fabricate Gadget)
 
 **⛏ EXTRACTORS** — Automatically extract resources. 3 levels per gadget.
 
-- ⛏️ **Drill** — Extracts resources
-- 💧 **Pump** — Pumps water into Pond/Refinery
-- 🐝 **Apiary** — Auto-collects honey *(Trigger: 🤖 Place first Apiary)*
+- ⛏️ **Drill** — Extracts Petroleum from underground deposits. Phải xây — không có sẵn tự nhiên.
+- 💧 **Pump** — Pumps water into Pond / Refinery
+- 🐝 **Apiary** — Auto-collects Honey *(Trigger: Place first Apiary)*
 
 **🔧 UTILITIES**
 
@@ -517,30 +565,84 @@ Sleep to skip — skips the rest of the night. On wakeup: fully restores HP & En
 
 ### 📦 Treasure Pod
 
-Scattered at fixed locations on the map. Open to receive: 💰 Granumz · 🍎 Crops · ⚗️ Materials · 📋 Lv3 Blueprints
+Scattered at fixed locations on the map. Open to receive: 💰 Granumz · 🌾 Crops · ⚗️ Materials · 📋 Lv3 Blueprints
 
 > Pod Blueprints require control skills and HandGun. Achievement **Pod Hunter**: open all → Granumz bonus + Vial Lv3 blueprint.
 
 ---
 
+## 11B Usage Balance — Item Consumption Reference
+
+| Item | Total Used | Tier |
+|------|-----------|------|
+| 🥐 Flour | ~45 | **Essential** |
+| 🍬 Sugar | ~38 | **Essential** |
+| 🥛 Coconut Milk | ~29 | **Essential** |
+| 🍅 Tomato | ~21 | **Essential** |
+| 🥕 Carrot | ~18 | **Advanced** |
+| 🌶️ Chili | ~18 | **Advanced** |
+| 🫐 Berry | ~17 | **Advanced** |
+| 🧈 Margarine | ~17 | **Advanced** |
+| ⭐ Carambola | ~15 | **Advanced** |
+| 🥚 Egg | ~15 | **Advanced** |
+| 🥬 Cabbage | ~12 | **Advanced** |
+| 🧪 Vial Lv1 | ~8 | **Advanced** |
+| 🍯 Honey | ~6 | **Precious** |
+| 🍇 Grape | ~6 | **Precious** |
+| 🌵 Durian | ~6 | **Precious** |
+| 🌱 Cephalotaxus Fortunei | ~5 | **Precious** |
+| 🌑 Belladonna | ~5 | **Precious** |
+| 🔬 Vial Lv2 | ~5 | **Precious** |
+| 🍞 Bread | ~4 | **Precious** |
+| 🟤 Guarana | ~4 | **Precious** |
+| 🌱 Ginseng | ~4 | **Precious** |
+| 🍎 Apple | ~3 | **Precious** |
+| ☠️ Poison Shard | ~3 | **Precious** |
+| 🌿 Heartleaf Gelsemium | ~3 | **Precious** |
+| ❄️ Snowflake | ~2 | **Precious** |
+| 🌲 Pine | ~2 | **Precious** |
+| 🌿 Hippomane mancinella | ~2 | **Precious** |
+| 💛 Voltanic Crystal | ~2 | **Precious** |
+| 🛢️ Petroleum | ~2 | **Precious** |
+| ⚗️ Vial Lv3 | ~2 | **Precious** |
+
+| Tier | Quantity | Notes |
+|------|----------|-------|
+| **Essential** | 20–49 | Ưu tiên farm ngay từ đầu — bottleneck nếu thiếu |
+| **Advanced** | 8–19 | Cân đối — không bottleneck nhưng không lơ là |
+| **Precious** | < 8 | Late-game hoặc chỉ dùng 1–2 recipe chuyên biệt — scarcity intentional |
+
+**Key Balance Notes:**
+- **Flour, Sugar, Coconut Milk** — top-tier demand. Ưu tiên farm Wheat, Beetroot, Coconut từ sớm.
+- **Durian** (Day 13) — demand rõ qua Hell Breath Mashed. Không phải idle WIP — cần có nguồn cung khi mở khóa.
+- **Glass Vial** — progression hoàn toàn tuyến tính: Silica Sand → Lv1 → ×3 Lv2 → ×3 Lv3. Fixed node Day 1, luôn có sẵn.
+- **Power Core** — chỉ cần Power Shard ×3. Fixed node Day 1. Không còn phụ thuộc Metal Scrap hay Iceron.
+- **Egg** — dùng trong Cream (Day 10) và Omelet (Day 7). Coop phải build trước Day 7.
+- **Petroleum** (Day 13) — chỉ có qua Drill. Scarcity intentional; chỉ dùng trong Capsaicin Bottle.
+- **Snowflake** (Day 5 Wild) — Precious, hiện chỉ dùng trong Frosteratrol Bottle. Collect tự do, không bottleneck.
+- **Poison Shard** (Day 21) — dùng 3 Wild herbs (Heartleaf, Cephalotaxus, Belladonna). Tất cả Collect tự do, dễ farm hơn version trước.
+- **Fortunei Bottle** (T4) — chỉ cần Honey Cake + Vial Lv3 + Poison Shard. Không còn phụ thuộc Acid Shard.
+- **Không còn trong bất kỳ recipe nào:** Circuit · Wood · Stone · Ruby · Metal Scrap · Iceron · Coal · Acid Shard · Gold Crystal *(recipe context)*.
+
+---
+
 ## 12 Achievement System
 
-Passive tracking — automatically unlocks rewards when conditions are met. No need to claim.
+Passive tracking — automatically unlocks rewards when conditions are met. No need to claim (Not included Achivement for Crop unlocking).
 
 | Achievement | Condition | Reward |
 |-------------|-----------|--------|
 | 🌿 Green Thumb | Harvest 100 Berries for the first time | +1 Garden Plot (early access) |
 | 💀 Night Cleaner | Kill 50 monsters in a single night | Exclusive blueprint |
-| 🗡 Monster Slayer | Kill 300 monsters total | Tomato (Shotgun) unlock |
+| 🗡 Monster Slayer | Kill 500 monsters total | Carambola (Sniper) unlock *(can unlock earlier)* |
 | 🐔 Balanced Farm | Raise 3 balanced Hen-Rooster pairs | Vitamizer early unlock |
 | 📦 Pod Hunter | Open all Treasure Pods on the map | Granumz bonus + Vial Lv3 blueprint |
 | 🌙 Survivor | Survive 20 days | Miracle Mix unlock (Garden) |
-| 👑 Boss Slayer | Kill 3 Bosses (Day 5 / 10 / 15) | Miracle Mix — increases harvest count, reduces Rotten timer |
+| 👑 Boss Slayer | Kill 3 Bosses (Day 6 / 10 / 15) | Miracle Mix — increases harvest count, reduces Rotten timer |
 | ⚗️ Master Brewer | Craft 10 Bottles in a single day | Crafting Station queue +2 slots |
 | 🤖 Automation King | Place all of: Drill + Pump + Apiary | Turret Link Lv2 blueprint |
-| 🍇 Pod Opener | Open the first Treasure Pod | Grape crop unlock |
 | 🐝 Beekeeper | Place the Apiary Gadget for the first time | Honey resource + Honey Cake recipe |
 
 ---
 
-*GDD Version 300326 — Crop Shooter | Weapons · Enemies · Map · Balance → TBD*
+*GDD Version 180426 — Crop Shooter | Weapons · Enemies · Map · Balance → TBD*

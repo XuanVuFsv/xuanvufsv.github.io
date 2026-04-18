@@ -490,66 +490,55 @@
       Crop🍅Shooter
     </button>
     <h1>🌾 Crop Shooter — Unlock Timeline Report</h1>
-    <div class="subtitle">Version 300326 · Phân tích tính nhất quán & timeline unlock theo ngày · 3 nguồn: GDD_Summary ·
-      Recipe_Diagram · Constructions_Detail</div>
+    <div class="subtitle">Version 180426 · Cập nhật theo Recipe_Diagram v4 · Đã xóa Metal Scrap / Iron / Ruby / Coal / Circuit / Acid Shard · Đổi tên toàn bộ Bottles · Thêm thảo dược Wild mới</div>
 
     <!-- ===== CONFLICT CHECK ===== -->
     <div class="section">
       <div class="section-title">🔍 Kiểm tra tính nhất quán (Cross-file Conflicts)</div>
       <div
         style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 20px;border-left:4px solid var(--ok);margin-bottom:4px;">
-        <div style="font-size:15px;font-weight:800;color:var(--ok);margin-bottom:10px;">✅ Tất cả conflicts đã được xử lý
-          — phiên bản hiện tại nhất quán</div>
-        <div style="font-size:13px;color:var(--muted);line-height:1.8;">Các xung đột đã tìm thấy và giải quyết trong lần
-          review trước:</div>
+        <div style="font-size:15px;font-weight:800;color:var(--ok);margin-bottom:10px;">✅ Đã đồng bộ hoàn toàn với Recipe_Diagram v4</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.8;">Các thay đổi đã áp dụng trong lần cập nhật này:</div>
         <div class="conflicts" style="margin-top:14px;">
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Omelet unlock Day 7 (không phải Day 5)</h4>
-            <p>GDD_Summary đã được cập nhật: Omelet chuyển sang Day 7 đúng với dependency Egg từ Coop.</p>
+            <h4>✅ Xóa toàn bộ mining resources cũ</h4>
+            <p>Iron, Metal Scrap, Coal, Ruby, Copper, Wood (WIP), Stone (WIP), Trash — không còn trong bất kỳ recipe nào. Đã xóa khỏi Natural drops và Ingredients.</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Burger Berry thống nhất +25 HP</h4>
-            <p>Đã chọn +25 HP theo Recipe_Diagram làm nguồn chuẩn. GDD_Summary đã cập nhật.</p>
+            <h4>✅ Xóa Circuit & Acid Shard</h4>
+            <p>Circuit đã bị loại bỏ. Acid Shard (legacy) đã xóa. Power Core giờ chỉ cần Power Shard ×3 (fixed node Day 1). Poison Shard giờ craft từ 3 thảo dược Wild.</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Crit Bottle = Day 11</h4>
-            <p>Đã thống nhất Crit Bottle unlock Day 11 (sau khi có đủ Tomato Soup ×8 từ Day 10). GDD timeline đã cập
-              nhật.</p>
+            <h4>✅ Đổi tên toàn bộ Bottles</h4>
+            <p>Frost→Frosteratrol · Rapidfire→Burstger · Crit→Critical Souper · Blaze→Capsaicin · Venom→Atropine · Cluster→Dynamite · Corrosion→Phorbol · Arc→Voltaic · Miasma→Fortunei. Đã cập nhật tên + recipe + detail.</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Power Core / Circuit = Day 1</h4>
-            <p>"Day 0" đã được xóa khỏi Recipe_Diagram. Power Core và Circuit thống nhất unlock Day 1.</p>
+            <h4>✅ Thêm thảo dược Wild mới (Day 5–21)</h4>
+            <p>Snowflake (Day 5), Ginseng (Day 6), Guarana (Day 11), Petroleum/Belladonna (Day 13), Pine (Day 15), Hippomane mancinella (Day 16), Voltanic Crystal/Cephalotaxus Fortunei (Day 20), Heartleaf Gelsemium (Day 21).</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Cluster Bottle ghi chú rõ ràng</h4>
-            <p>Sweet Grapeball (food) unlock Day 8, Cluster Bottle (bottle) unlock Day 15 khi có Vial Lv2. Đã thêm ghi
-              chú phân biệt trong cả hai file.</p>
+            <h4>✅ Silica Sand thay thế Sand — Fixed node Day 1</h4>
+            <p>Silica Sand là fixed node không thể phá hủy, unlock dần. Power Shard tương tự. Glass Vial Lv1 → Lv2 (×3 Lv1) → Lv3 (×3 Lv2) — progression tuyến tính, không cần Ruby hay Voltanic Crystal.</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Day 4 được thêm vào GDD timeline</h4>
-            <p>GDD_Summary đã bổ sung Day 4: Silo, Builder's Shop, Fabricate Gadget, Drill Gadget blueprint.</p>
+            <h4>✅ Thêm crops mới: Durian (D13), Noni Fruit & Pomegranate (D20 WIP)</h4>
+            <p>Durian dùng trong Hell Breath Mashed + Atropine Bottle. Noni Fruit & Pomegranate là WIP, TBD ammo type.</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Đã xử lý — Coconut Milk phân loại đúng vào Ingredients</h4>
-            <p>Recipe_Diagram đã chuyển Coconut Milk từ bảng "Natural & Coop Drops" sang bảng Ingredients. Nguồn: craft
-              từ 🥥 Coconut ×3 tại Crafting Station.</p>
+            <h4>✅ Cập nhật triggers & recipes</h4>
+            <p>Tomato trigger: Defeat first Boss (không phải Kill 300 monsters). Carambola trigger: Kill 500 monsters. Các recipe điều chỉnh theo 3-slot rule. Cabbage Sauce: Cabbage×6 + Sugar×1 (split).</p>
           </div>
 
           <div class="conflict-card ok-card">
-            <h4>✅ Nhất quán — Tất cả Bottle recipes khớp giữa các file</h4>
-            <p>Toàn bộ 10 bottle (Frost, Rapidfire, Crit, Blaze, Venom, Cluster, Corrosion, Arc, Miasma) nhất quán.</p>
-          </div>
-
-          <div class="conflict-card ok-card">
-            <h4>✅ Nhất quán — Special Craft, Constructions, Gadgets đều khớp</h4>
-            <p>Ap-pleClear Ca-Rotket, tất cả constructions và gadget unlock day nhất quán giữa 3 file.</p>
+            <h4>✅ Honey unlock Day 7 (Apiary Gadget trigger)</h4>
+            <p>Honey di chuyển từ Natural Day 11 xuống Coop Day 7 — trigger: Place first Apiary Gadget. Honey Cake (Day 16) và Fortunei Bottle (Day 21) đã cập nhật dependency.</p>
           </div>
 
         </div>
@@ -651,24 +640,17 @@
       {
         day: 1,
         crops: [
-          { name: "🫐 Berry", detail: "AR ammo · Frost Bottle ingredient" },
-          { name: "🌾 Wheat", detail: "SMG ammo · 1 bundle = 3 units · Flour, Chicken Feed" },
+          { name: "🫐 Berry", detail: "AR ammo · 🌿⚔️ Crop (Trồng trọt) · → Frosteratrol Bottle ingredient" },
+          { name: "🌾 Wheat", detail: "SMG ammo · 🌿⚔️ Crop (Trồng trọt) · → Flour" },
         ],
         natural: [
-          { name: "💀 Monster Meat", detail: "Source: Night wave drop" },
-          { name: "🔩 Iron", detail: "Source: Mine — Surface" },
-          { name: "🟡 Sand", detail: "Source: Mine — Beach" },
-          { name: "🗑️ Trash", detail: "Source: Mine — Ruins" },
-          { name: "🔧 Metal Scrap", detail: "Source: Mine — Ruins" },
-          { name: "⚡ Power Shard", detail: "Source: Mine — Surface" },
-          { name: "🟤 Copper", detail: "Source: Mine — Surface" },
-          { name: "🌲 Wood (WIP)", detail: "Source: Chop trees — Builder's Shop WIP" },
-          { name: "🪨 Stone (WIP)", detail: "Source: Mine — Surface · Builder's Shop WIP" },
+          { name: "💀 Monster Meat", detail: "👾 Drop — Night wave drop · → Soggy Bread" },
+          { name: "⚡ Power Shard", detail: "🌿 Wild — Fixed node, unlocks gradually, cannot be destroyed · → Power Core" },
+          { name: "🟡 Silica Sand", detail: "🌿 Wild — Fixed node, unlocks gradually, cannot be destroyed · → Glass Vial Lv1" },
         ],
         ingredients: [
           { name: "🥐 Flour", detail: "Recipe: 🌾 Wheat ×9 (3×3)" },
-          { name: "🔋 Power Core", detail: "Recipe: ⚡ Power Shard ×1 + 🔧 Metal Scrap ×1 + 🔩 Iron ×1" },
-          { name: "💡 Circuit", detail: "Recipe: ⚡ Power Shard ×1 + 🔧 Metal Scrap ×1 + 🟤 Copper ×1" },
+          { name: "🔋 Power Core", detail: "Recipe: ⚡ Power Shard ×1 + ⚡ Power Shard ×1 + ⚡ Power Shard ×1" },
         ],
         food: [],
         bottles: [],
@@ -691,10 +673,7 @@
       {
         day: 2,
         crops: [],
-        natural: [
-          { name: "🪨 Coal vein (shallow caves)", detail: "Source: Mine — Shallow Caves · First discovery" },
-          { name: "🔧 Metal Scrap (ruins)", detail: "Source: Mine — Ruins · First discovery" },
-        ],
+        natural: [],
         ingredients: [],
         food: [],
         bottles: [],
@@ -710,17 +689,17 @@
       {
         day: 3,
         crops: [
-          { name: "🌱 Bean", detail: "SMG ammo · → Bean Oil" },
-          { name: "🥕 Carrot", detail: "→ Hot Bunny, Carrot Cake, Red Alert Salad" },
-          { name: "🥬 Cabbage", detail: "→ Cabbage Sauce, Burger Berry" },
-          { name: "🥥 Coconut", detail: "→ Coconut Oil → Coconut Milk" },
+          { name: "🌱 Bean", detail: "SMG ammo · 🌿⚔️ Crop · → Bean Oil" },
+          { name: "🥕 Carrot", detail: "🌿⚔️ Crop · Trigger: Defeat first 100 enemy (can unlock earlier) · → Bunny Burger, Carrot Cake" },
+          { name: "🥬 Cabbage", detail: "🌿 Crop/Wild · → Cabbage Sauce, Burger Berry" },
+          { name: "🥥 Coconut", detail: "🌿⚔️ Crop · Trigger: Open a Treasure Pod · → Coconut Oil, Coconut Milk" },
         ],
         natural: [],
         ingredients: [
           { name: "🛢️ Bean Oil", detail: "Recipe: 🌱 Bean ×9 (3×3)" },
           { name: "🧴 Coconut Oil", detail: "Recipe: 🥥 Coconut ×9 (3×3)" },
           { name: "🧈 Margarine", detail: "Recipe: 🛢️ Bean Oil ×2 + 🧴 Coconut Oil ×1 + 🛢️ Bean Oil ×1" },
-          { name: "🥛 Coconut Milk", detail: "Recipe: 🥥 Coconut ×9 (3×3) · (craft tại Crafting Station)" },
+          { name: "🥛 Coconut Milk", detail: "Recipe: 🥥 Coconut ×9 (3×3) · craft tại Crafting Station" },
         ],
         food: [],
         bottles: [],
@@ -746,27 +725,29 @@
           { name: "Gear: Boost Module Lv1", detail: "500G · Day 4 · +1 movement speed" },
         ],
         gadgets: [
-          { name: "⛏️ Drill Gadget", detail: "Extractor · Blueprint: 500G · Output: 10–40 items/cycle · 18h/cycle" },
+          { name: "⛏️ Drill Gadget", detail: "Extractor · Blueprint: 500G · Output: 10–40 items/cycle · 18h/cycle · Required for Petroleum (Day 13)" },
         ],
         special: [],
       },
       {
         day: 5,
         crops: [
-          { name: "🫚 Beetroot", detail: "→ Sugar (9 Beetroot = 1 Sugar)" },
+          { name: "🫚 Beetroot", detail: "🌿 Crop/Wild · → Sugar (9 Beetroot = 1 Sugar)" },
         ],
-        natural: [],
+        natural: [
+          { name: "❄️ Snowflake", detail: "🌿 Wild — Collect: Snow Mountains · → Frosteratrol Bottle" },
+        ],
         ingredients: [
           { name: "🍬 Sugar", detail: "Recipe: 🫚 Beetroot ×9 (3×3)" },
-          { name: "🧪 Glass Vial Lv1", detail: "Recipe: 🟡 Sand ×9 (3×3) · Used for Tier 1–2 Bottles" },
+          { name: "🧪 Glass Vial Lv1", detail: "Recipe: 🟡 Silica Sand ×9 (3×3) · Used for Tier 1–2 Bottles" },
         ],
         food: [
-          { name: "🍞 Bread", detail: "+5 HP · Recipe: 🥐 Flour ×1 + 🍬 Sugar ×1 + 🥐 Flour ×1" },
-          { name: "🥖 Soggy Bread", detail: "+30 HP · STEALTH (monsters ignore temporarily) · Recipe: 🥐 Flour ×1 + 💀 Monster Meat ×4 + 🥐 Flour ×1" },
-          { name: "🎂 Berry Cake", detail: "+20 HP · → Frost Bottle · Recipe: 🥐 Flour ×1 + 🫐 Berry ×8 + 🍬 Sugar ×1" },
+          { name: "🍞 Bread", detail: "+5 HP · HEAL · Recipe: 🥐 Flour ×1 + 🍬 Sugar ×1 + 🥐 Flour ×1" },
+          { name: "🥖 Soggy Bread", detail: "+30 HP · STEALTH — monsters ignore you temporarily · Recipe: 🥐 Flour ×3 + 💀 Monster Meat ×6" },
+          { name: "🎂 Berry Cake", detail: "+20 HP · → Frosteratrol Bottle · Recipe: 🥐 Flour ×1 + 🫐 Berry ×8 + 🍬 Sugar ×1" },
         ],
         bottles: [
-          { name: "🧊 Frost Bottle", detail: "Tier 1 · ❄ Slow 30–70%, Freeze 30%, +50% dmg if frozen · 12s · SMG/AR · Recipe: 🎂 Berry Cake ×8 + 🧪 Vial Lv1 ×1 + 🔩 Iron ×2" },
+          { name: "🧊 Frosteratrol Bottle", detail: "Tier 1 · Slow 30% move speed · Freeze 10% chance 2.5s · +10%/+20% dmg amp · 12s · SMG/AR · Recipe: 🎂 Berry Cake ×8 + 🧪 Vial Lv1 ×1 + ❄️ Snowflake ×2" },
         ],
         constructions: [],
         upgrades: [
@@ -781,17 +762,19 @@
       {
         day: 6,
         crops: [
-          { name: "🍅 Tomato", detail: "⚠️ Trigger: Kill 300 monsters · Shotgun ammo · → Tomato Soup, Red Alert Salad" },
+          { name: "🍅 Tomato", detail: "🌿⚔️ Crop · ⚠️ Trigger: Defeat first Boss · Shotgun ammo · → Tomato Soup, Hot and Sour Salad" },
         ],
-        natural: [],
+        natural: [
+          { name: "🌱 Ginseng", detail: "🌿 Wild — Collect: Mountains · → Burstger Bottle" },
+        ],
         ingredients: [
-          { name: "🥣 Cabbage Sauce", detail: "Recipe: 🥬 Cabbage ×8 + 🍬 Sugar ×1 · (split: Cabbage×4 + Sugar×1 + Cabbage×4)" },
+          { name: "🥣 Cabbage Sauce", detail: "Recipe: 🥬 Cabbage ×6 + 🍬 Sugar ×1 (split: Cabbage×3 + Sugar×1 + Cabbage×3) · → Burnwich, Carambola Cake" },
         ],
         food: [
-          { name: "🍔 Burger Berry", detail: "+25 HP · → Rapidfire Bottle · Recipe: 🥐 Flour ×1 + 🥬 Cabbage ×4 + 🫐 Berry ×8" },
+          { name: "🍔 Burger Berry", detail: "+25 HP · → Burstger Bottle · Recipe: 🍞 Bread ×1 + 🥬 Cabbage ×3 + 🫐 Berry ×9" },
         ],
         bottles: [
-          { name: "⚡ Rapidfire Bottle", detail: "Tier 1 · 🏃 +50% fire rate · 8s · AR/SMG/Shotgun · Recipe: 🍔 Burger Berry ×8 + 🧪 Vial Lv1 ×1 + 🔩 Iron ×2" },
+          { name: "⚡ Burstger Bottle", detail: "Tier 1 · +50% fire rate · +10% bullet spread (trade-off) · 7s · AR/SMG/Shotgun · Recipe: 🍔 Burger Berry ×8 + 🧪 Vial Lv1 ×1 + 🌱 Ginseng ×2" },
         ],
         constructions: [],
         upgrades: [],
@@ -802,11 +785,12 @@
         day: 7,
         crops: [],
         natural: [
-          { name: "🥚 Egg", detail: "Coop drop · Trigger: Build Coop · → Omelet, Cream" },
+          { name: "🥚 Egg", detail: "🐔 Coop — Trigger: Build Coop · → Omelet, Cream" },
+          { name: "🍯 Honey", detail: "🐔 Apiary — Trigger: Place first Apiary Gadget · → Honey Cake, Fortunei Bottle" },
         ],
         ingredients: [],
         food: [
-          { name: "🍳 Omelet", detail: "+25 HP · REGEN effect · Recipe: 🥚 Egg ×9 + 🥚 Egg ×9 (= ×18 total, 3×6)" },
+          { name: "🍳 Omelet", detail: "+25 HP · REGEN — hồi HP liên tục sau khi ăn · Recipe: 🥚 Egg ×9 (3×3)" },
         ],
         bottles: [],
         constructions: [
@@ -825,21 +809,21 @@
         ],
         gadgets: [
           { name: "💧 Water Pump Gadget", detail: "Extractor · Blueprint: 750G · Output: 100–200 water/cycle · 6h/cycle" },
-          { name: "🐝 Apiary Gadget", detail: "Extractor · Blueprint: 750G · Honey output: Low→High/cycle · 12h/cycle · Trigger: Place first Apiary → unlock 🍯 Honey" },
+          { name: "🐝 Apiary Gadget", detail: "Extractor · Blueprint: 750G · Honey output: Low→High/cycle · 12h/cycle · Trigger: Place first → unlock 🍯 Honey" },
         ],
         special: [],
       },
       {
         day: 8,
         crops: [
-          { name: "🍇 Grape", detail: "⚠️ Trigger: Open first Treasure Pod · Special ammo · → Sweet Grapeball" },
+          { name: "🍇 Grape", detail: "🌿⚔️ Crop · Special ammo · → Sweet Grapeball (→ Dynamite Bottle Day 15)" },
         ],
         natural: [],
         ingredients: [],
         food: [
-          { name: "🍡 Sweet Grapeball", detail: "+20 HP · → Cluster Bottle (Day 15) · Recipe: 🍇 Grape ×8 + 🍬 Sugar ×1 + 🍇 Grape ×8" },
-          { name: "🥪 Hot Bunny", detail: "+15 HP · Ap-pleClear 1/3 · Recipe: 🥕 Carrot ×4 + 🧈 Margarine ×1 + 🥕 Carrot ×4" },
-          { name: "🧁 Carrot Cake", detail: "+40 HP · Ap-pleClear 2/3 · Recipe: 🥕 Carrot ×5 + 🥛 Coconut Milk ×3 + 🍬 Sugar ×1" },
+          { name: "🍡 Sweet Grapeball", detail: "+30 HP · → Dynamite Bottle (Day 15) · Recipe: 🍇 Grape ×6 + 🍬 Sugar ×3 + 🥐 Flour ×6" },
+          { name: "🥪 Bunny Burger", detail: "+30 HP · CRAFT — Ap-pleClear Ca-Rotket (1/3) · Recipe: 🥕 Carrot ×6 + 🧈 Margarine ×3 + 🍞 Bread ×3" },
+          { name: "🧁 Carrot Cake", detail: "+40 HP · CRAFT — Ap-pleClear Ca-Rotket (2/3) · Recipe: 🥕 Carrot ×6 + 🥛 Coconut Milk ×3 + 🍬 Sugar ×3" },
         ],
         bottles: [],
         constructions: [
@@ -868,17 +852,15 @@
       {
         day: 10,
         crops: [
-          { name: "⭐ Carambola", detail: "⚠️ Trigger: Defeat first Boss · Sniper ammo · → Carambola Cake, Fresh Salad" },
-          { name: "🌶️ Chili", detail: "Flamethrower ammo · → Burnwich, Red Alert Salad" },
+          { name: "⭐ Carambola", detail: "🌿⚔️ Crop · ⚠️ Trigger: Kill 500 monsters (can unlock earlier) · Sniper ammo · → Carambola Cake, Hot and Sour Salad" },
+          { name: "🌶️ Chili", detail: "🌿⚔️ Crop · Trigger: Open a Treasure Pod · Flamethrower ammo · → Burnwich, Hell Breath Mashed" },
         ],
-        natural: [
-          { name: "🖤 Coal", detail: "Source: Mine — Caves · Used in Blaze/Venom Bottle" },
-        ],
+        natural: [],
         ingredients: [
-          { name: "🍦 Cream", detail: "Recipe: 🥛 Coconut Milk ×3 + 🍬 Sugar ×1 + 🥚 Egg ×6 · Used in Apple Pie" },
+          { name: "🍦 Cream", detail: "Recipe: 🥛 Coconut Milk ×3 + 🍬 Sugar ×1 + 🥚 Egg ×6 · → Apple Pie" },
         ],
         food: [
-          { name: "🍲 Tomato Soup", detail: "+75 HP + regen · → Crit Bottle · Recipe: 🍅 Tomato ×8 + 🧈 Margarine ×1 + 🍬 Sugar ×1" },
+          { name: "🍲 Tomato Soup", detail: "+75 HP ↑ (+ regen) · → Critical Souper · Recipe: 🍅 Tomato ×6 + 🧈 Margarine ×3 + 🍬 Sugar ×3" },
         ],
         bottles: [],
         constructions: [],
@@ -896,12 +878,12 @@
         day: 11,
         crops: [],
         natural: [
-          { name: "🍯 Honey", detail: "⚠️ Trigger: Place first Apiary Gadget · → Honey Cake, Miasma Bottle" },
+          { name: "🟤 Guarana", detail: "🌿 Wild — Collect: River · → Critical Souper Bottle" },
         ],
         ingredients: [],
         food: [],
         bottles: [
-          { name: "🎯 Crit Bottle", detail: "Tier 2 · ⚡ 100% Crit × 2 dmg · 10s · AR/Shotgun/Sniper · Recipe: 🍲 Tomato Soup ×8 + 🧪 Vial Lv1 ×1 + 🔩 Iron ×2" },
+          { name: "🎯 Critical Souper", detail: "Tier 2 · 100% Crit ×2 dmg · Headshot ×3.5 total · 7s · AR/Shotgun/Sniper · Recipe: 🍲 Tomato Soup ×8 + 🧪 Vial Lv1 ×1 + 🟤 Guarana ×2" },
         ],
         constructions: [],
         upgrades: [],
@@ -926,17 +908,22 @@
       },
       {
         day: 13,
-        crops: [],
-        natural: [],
+        crops: [
+          { name: "🌵 Durian (WIP)", detail: "🌿⚔️ Crop · → Hell Breath Mashed · → Atropine Bottle" },
+        ],
+        natural: [
+          { name: "🛢️ Petroleum", detail: "🔩 Drill — Construction required (không có sẵn tự nhiên) · → Capsaicin Bottle" },
+          { name: "🌑 Belladonna", detail: "🌿 Wild — Collect: Forest (Stone) · → Atropine Bottle · → Poison Shard (Day 21)" },
+        ],
         ingredients: [],
         food: [
-          { name: "🌭 Burnwich", detail: "+35 HP · → Blaze Bottle · Recipe: 🥐 Flour ×1 + 🌶️ Chili ×8 + 🥣 Cabbage Sauce ×1" },
-          { name: "🔥 Red Alert Salad", detail: "+50 HP · → Venom Bottle · Recipe: 🌶️ Chili ×8 + 🍅 Tomato ×8 + 🥕 Carrot ×4" },
-          { name: "🌟 Carambola Cake", detail: "+60 HP · → Arc Bottle · Recipe: ⭐ Carambola ×10 + 🥛 Coconut Milk ×3 + 🥣 Cabbage Sauce ×1" },
+          { name: "🌭 Burnwich", detail: "+35 HP · → Capsaicin Bottle · Recipe: 🥐 Flour ×3 + 🌶️ Chili ×9 + 🥣 Cabbage Sauce ×3" },
+          { name: "🔥 Hell Breath Mashed", detail: "+50 HP · → Atropine Bottle · Recipe: 🌵 Durian ×6 + 🧈 Margarine ×3 + 🌶️ Chili ×9" },
+          { name: "🌟 Carambola Cake", detail: "+60 HP · → Voltaic Bottle (Day 20) · Recipe: ⭐ Carambola ×6 + 🥛 Coconut Milk ×3 + 🥣 Cabbage Sauce ×3" },
         ],
         bottles: [
-          { name: "🔆 Blaze Bottle", detail: "Tier 3 · 🔥 +30% dmg + fire trail 3/s×4s · 10s · Flamethrower/AR · Recipe: 🌭 Burnwich ×8 + 🧪 Vial Lv1 ×1 + 🖤 Coal ×2" },
-          { name: "🐍 Venom Bottle", detail: "Tier 3 · ☠ Poison cloud 4–10 dmg/s · 12s · Toxic Grenade · Recipe: 🔥 Red Alert Salad ×8 + 🧪 Vial Lv1 ×1 + 🖤 Coal ×2" },
+          { name: "🔆 Capsaicin Bottle", detail: "Tier 3 · +30% dmg · fire trail visual · 8% chance rocket 250% dmg · 15s · Flamethrower/AR · Recipe: 🌭 Burnwich ×8 + 🧪 Vial Lv1 ×1 + 🛢️ Petroleum ×2" },
+          { name: "🐍 Atropine Bottle", detail: "Tier 3 · Stack poison +20% dmg/stack max 7 (+140%) · auto zoom out · 12s · Toxic Grenade · Recipe: 🔥 Hell Breath Mashed ×8 + 🧪 Vial Lv1 ×1 + 🌑 Belladonna ×2" },
         ],
         constructions: [],
         upgrades: [],
@@ -948,20 +935,18 @@
       {
         day: 15,
         crops: [
-          { name: "🍎 Apple", detail: "Grenade ammo · → Apple Pie, Ap-pleClear" },
-          { name: "🫑 Pepper", detail: "Toxic Grenade ammo · → Fresh Salad" },
+          { name: "🍎 Apple", detail: "🌿⚔️ Crop · Grenade ammo · → Apple Pie, Ap-pleClear (3/3)" },
+          { name: "🫑 Pepper", detail: "🌿⚔️ Crop · Trigger: Defeat third Boss · Toxic Grenade ammo · → Hot and Sour Salad" },
         ],
         natural: [
-          { name: "💎 Ruby", detail: "Source: Mine — Deep Caves · Used in Vial Lv2" },
+          { name: "🌲 Pine", detail: "🌿 Wild — Collect: Forest (chứa Colophony) · → Dynamite Bottle" },
         ],
         ingredients: [
-          { name: "🔬 Glass Vial Lv2", detail: "Recipe: 🧪 Vial Lv1 ×1 + 💎 Ruby ×2 + 🧪 Vial Lv1 ×1 · Tier 3 Bottles" },
-          { name: "☠️ Poison Shard", detail: "Recipe: 🗑️ Trash ×6 + 🟡 Sand ×3 · Used in Miasma Bottle" },
-          { name: "💧 Acid Shard", detail: "Recipe: 🗑️ Trash ×6 + 🔧 Metal Scrap ×3 · Legacy item" },
+          { name: "🔬 Glass Vial Lv2", detail: "Recipe: 🧪 Vial Lv1 ×3 (3×1) · Tier 3 Bottles — không cần Ruby" },
         ],
         food: [],
         bottles: [
-          { name: "💥 Cluster Bottle", detail: "Tier 3 · 💫 Split → 3 targets 50% dmg · 8s · Grenade/Shotgun · Recipe: 🍡 Sweet Grapeball ×8 + 🔬 Vial Lv2 ×1 + 💎 Ruby ×2" },
+          { name: "💥 Dynamite Bottle", detail: "Tier 3 · 8% chance bomb on enemy → nổ AoE 150% dmg bán kính 3m sau 1.5s · 8s · Grenade/Shotgun · Recipe: 🍡 Sweet Grapeball ×8 + 🔬 Vial Lv2 ×1 + 🌲 Pine ×2" },
         ],
         constructions: [
           { name: "📦 Treasure Pod Lv3", detail: "Base · Milestone · Hard reach — requires platforming skill & HandGun · Reward: Blueprint + rare item drop" },
@@ -976,15 +961,17 @@
       {
         day: 16,
         crops: [],
-        natural: [],
+        natural: [
+          { name: "🌿 Hippomane mancinella", detail: "🌿 Wild — Collect: River · → Phorbol Bottle" },
+        ],
         ingredients: [],
         food: [
-          { name: "🥧 Apple Pie", detail: "+100 HP · Ap-pleClear 3/3 · Recipe: 🍎 Apple ×10 + 🥐 Flour ×1 + 🍦 Cream ×1" },
-          { name: "🥗 Fresh Salad", detail: "+150 HP + regen · → Corrosion Bottle · Recipe: 🍅 Tomato ×8 + ⭐ Carambola ×10 + 🫑 Pepper ×10" },
-          { name: "🍰 Honey Cake", detail: "+80 HP · → Miasma Bottle · Recipe: 🍯 Honey ×6 + 🥐 Flour ×1 + 🥛 Coconut Milk ×3" },
+          { name: "🥧 Apple Pie", detail: "+100 HP · CRAFT — Ap-pleClear Ca-Rotket (3/3) · Recipe: 🍎 Apple ×3 + 🥐 Flour ×3 + 🍦 Cream ×3" },
+          { name: "🥗 Hot and Sour Salad", detail: "+150 HP ↑ (+ regen) · → Phorbol Bottle · Recipe: 🍅 Tomato ×9 + ⭐ Carambola ×3 + 🫑 Pepper ×3" },
+          { name: "🍰 Honey Cake", detail: "+80 HP · → Fortunei Bottle · Recipe: 🍯 Honey ×6 + 🥐 Flour ×1 + 🥛 Coconut Milk ×3" },
         ],
         bottles: [
-          { name: "🟢 Corrosion Bottle", detail: "Tier 3 · 🧪 Stack +2/4/6/8/10 dmg · 10s · Shotgun/Sniper · Recipe: 🥗 Fresh Salad ×10 + 🔬 Vial Lv2 ×1 + 💎 Ruby ×2" },
+          { name: "🟢 Phorbol Bottle", detail: "Tier 3 · Xuyên giáp 50% · stack 5 lần → đạn xuyên enemy · 10s · Shotgun/Sniper · Recipe: 🥗 Hot and Sour Salad ×10 + 🔬 Vial Lv2 ×1 + 🌿 Hippomane mancinella ×2" },
         ],
         constructions: [],
         upgrades: [
@@ -993,7 +980,7 @@
         ],
         gadgets: [],
         special: [
-          { name: "🚀 Ap-pleClear Ca-Rotket", detail: "One-use/night · Massive AoE · Recipe: 🥪 Hot Bunny ×1 + 🧁 Carrot Cake ×1 + 🥧 Apple Pie ×1" },
+          { name: "🚀 Ap-pleClear Ca-Rotket", detail: "One-use/night · Massive AoE · Destroy all enemies in range · Recipe: 🥪 Bunny Burger ×1 + 🧁 Carrot Cake ×1 + 🥧 Apple Pie ×1" },
         ],
       },
       {
@@ -1028,18 +1015,19 @@
       {
         day: 20,
         crops: [
-          { name: "🌵 Durian (WIP)", detail: "TBD · → Miasma Bottle (legacy)" },
-          { name: "🍈 Noni Fruit (WIP)", detail: "TBD · → Corrosion Bottle (legacy)" },
+          { name: "🍈 Noni Fruit (WIP)", detail: "🌿⚔️ Crop · Trigger: Kill 1000 monsters (can unlock earlier) · Ammo: TBD" },
+          { name: "🍑 Pomegranate (WIP)", detail: "🌿⚔️ Crop · Trigger: Open a Treasure Pod · Ammo: TBD" },
         ],
         natural: [
-          { name: "💛 Gold Crystal", detail: "Source: Mine — Mountains · Used in Vial Lv3" },
+          { name: "💛 Voltanic Crystal", detail: "🌿 Wild — Collect: Caves · → Voltaic Bottle" },
+          { name: "🌱 Cephalotaxus Fortunei", detail: "🌿 Wild — Collect: Forest · → Poison Shard (Day 21)" },
         ],
         ingredients: [
-          { name: "⚗️ Glass Vial Lv3", detail: "Recipe: 🔬 Vial Lv2 ×1 + 💛 Gold Crystal ×2 + 🔬 Vial Lv2 ×1 · Tier 4 Bottles" },
+          { name: "⚗️ Glass Vial Lv3", detail: "Recipe: 🔬 Vial Lv2 ×3 (3×1) · Tier 4 Bottles — không cần Voltanic Crystal trong Vial" },
         ],
         food: [],
         bottles: [
-          { name: "🌩️ Arc Bottle", detail: "Tier 4 · ⚡ Chain 3 enemies 60% dmg · 8s · SMG · Recipe: 🌟 Carambola Cake ×10 + ⚗️ Vial Lv3 ×1 + 💛 Gold Crystal ×2" },
+          { name: "🌩️ Voltaic Bottle", detail: "Tier 4 · Chain điện 4 mục tiêu · 60% dmg/chain · range ~4m · 8s · SMG · Recipe: 🌟 Carambola Cake ×10 + ⚗️ Vial Lv3 ×1 + 💛 Voltanic Crystal ×2" },
         ],
         constructions: [],
         upgrades: [
@@ -1051,11 +1039,15 @@
       {
         day: 21,
         crops: [],
-        natural: [],
-        ingredients: [],
+        natural: [
+          { name: "🌿 Heartleaf Gelsemium", detail: "🌿 Wild — Collect: Mountains · → Poison Shard" },
+        ],
+        ingredients: [
+          { name: "☠️ Poison Shard", detail: "Recipe: 🌿 Heartleaf Gelsemium ×3 + 🌱 Cephalotaxus Fortunei ×3 + 🌑 Belladonna ×3 · → Fortunei Bottle" },
+        ],
         food: [],
         bottles: [
-          { name: "☁️ Miasma Bottle", detail: "Tier 4 · ☠ Cloud 60% density 10 dmg/s · 5m AoE · 12s · Grenade · Recipe: 🍰 Honey Cake ×8 + ⚗️ Vial Lv3 ×1 + ☠️ Poison Shard ×2" },
+          { name: "☁️ Fortunei Bottle", detail: "Tier 4 · 30% chance smoke AoE 5m · 10 dmg/s 20s · Kill in smoke → drop Fragment (heal/buff random) · All weapons · Recipe: 🍰 Honey Cake ×6 + ⚗️ Vial Lv3 ×1 + ☠️ Poison Shard ×3" },
         ],
         constructions: [],
         upgrades: [
