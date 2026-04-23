@@ -94,7 +94,7 @@ Each crop can be used as:
 | **3** | New crops & ingredients | 🌱 Bean (SMG ammo), 🥕 Carrot (Rocket-coding like grenade - just config gravity scale and friction,...) *(Trigger: Defeat 100 enemies — can unlock earlier)*, 🥬 Cabbage, 🥥 Coconut (AR-Pushback) *(Trigger: Open a Treasure Pod)*, 🛢️ Bean Oil, 🧴 Coconut Oil, 🥛 Coconut Milk, 🧈 Margarine |
 | **4** | New construction | 🏚 Silo, 🏪 Builder's Shop, ⛏️ Drill Gadget Lv1 |
 | **5** | First expansion | 🫚 Beetroot → Sugar, 🧪 Glass Vial Lv1 *(Silica Sand ×9)*, ❄️ Snowflake *(Collect — Snow Mountains)*, 🍞 Bread +5HP, 🥖 Soggy Bread +30HP **STEALTH**, 🎂 Berry Cake +20HP, 🧊 Frosteratrol Bottle |
-| **6** | Tomato + Cabbage Sauce | 🍅 Tomato (Shotgun) *[⚔️ Kill first Boss]*, 🥣 Cabbage Sauce, 🍔 Burger Berry +25HP, ⚡ Burstger Bottle *[requires 🌱 Ginseng *(Collect — Mountain)*]* |
+| **6** | Tomato + Cabbage Sauce | 🍅 Tomato (Shotgun) *[⚔️ Kill first Boss]*, 🥣 Cabbage Sauce, 🍔 Berry Burger +25HP, ⚡ Burstger Bottle *[requires 🌱 Ginseng *(Collect — Mountain)*]* |
 | **7** | Pond, Apiary, Coop | 🏞 Pond, 🚰 Water Pump, 🐝 Apiary, 🍯 Honey *(Trigger: Place first Apiary)*, 🐔 Coop *(no blueprint needed)*, 🐔 Expand Coop (6 → 12), 🍳 Omelet +25HP, 🥚 Egg *(Trigger: Build Coop)* |
 | **8** | Grape & mid-game food | 🍇 Grape (Power up version of Berry), 🌿 Spring Grass upgrade (Coop), 🥪 Bunny Burger +30HP *(Ap-pleClear 1/3)*, 🧁 Carrot Cake +40HP *(Ap-pleClear 2/3)*, 🍡 Sweet Grapeball +30HP → Dynamite Bottle |
 | **10** | Mid game | ⭐ Carambola (Sniper) *[🗡 Kill 500 monsters — can unlock earlier]*, 🌶️ Chili (Flamethrower - DOT- Multi Target) *[📦 Open a Treasure Pod]*, 🍦 Cream, 🍲 Tomato Soup +75HP → Critical Souper, 🤖 Crop Turret *(blueprint)* |
@@ -120,7 +120,7 @@ Each crop can be used as:
 | 🌾 | Wheat *(1 bundle = 3 units)* | Day 1 | — | 🌿⚔️ | SMG | 3/bundle | Ammo, Flour, Chicken Feed |
 | 🌱 | Bean | Day 3 | — | 🌿⚔️ | SMG | 1 crop | Ammo, Bean Oil |
 | 🥕 | Carrot | Day 3 | ⚔️ Defeat first 100 enemies *(can unlock earlier)* | 🌿⚔️ | — | 1 crop | Bunny Burger, Carrot Cake, Hot and Sour Salad |
-| 🥬 | Cabbage | Day 3 | — | 🌿 | — | 1 crop | Cabbage Sauce, Burger Berry |
+| 🥬 | Cabbage | Day 3 | — | 🌿 | — | 1 crop | Cabbage Sauce, Berry Burger |
 | 🥥 | Coconut | Day 3 | 📦 Open a Treasure Pod | 🌿⚔️ | Grenade | 1 crop | Ammo, Coconut Oil, Coconut Milk |
 | 🫚 | Beetroot | Day 5 | — | 🌿 | — | 1 crop | Sugar *(9 Beetroot = 1 Sugar)* |
 | 🍅 | Tomato | Day 6 | ⚔️ Defeat first Boss | 🌿⚔️ | Shotgun | 1 crop | Ammo, Tomato Soup, Hot and Sour Salad |
@@ -215,7 +215,7 @@ Each crop can be used as:
 | 🍞 Bread | 🥐 Flour ×1 | 🍬 Sugar ×1 | 🥐 Flour ×1 | +5 HP | Day 5 |
 | 🥖 Soggy Bread | 🥐 Flour ×3 | 💀 Monster Meat ×6 | 🥐 Flour ×3 | +30 HP · **STEALTH** | Day 5 |
 | 🎂 Berry Cake | 🥐 Flour ×1 | 🫐 Berry ×8 | 🍬 Sugar ×1 | +20 HP → Frosteratrol Bottle | Day 5 |
-| 🍔 Burger Berry | 🍞 Bread ×1 | 🥬 Cabbage ×3 | 🫐 Berry ×9 | +25 HP → Burstger Bottle | Day 6 |
+| 🍔 Berry Burger | 🍞 Bread ×1 | 🥬 Cabbage ×3 | 🫐 Berry ×9 | +25 HP → Burstger Bottle | Day 6 |
 | 🍳 Omelet | 🥚 Egg ×3 | 🥚 Egg ×3 | 🥚 Egg ×3 | +25 HP · **REGEN** | Day 7 |
 | 🍡 Sweet Grapeball | 🍇 Grape ×6 | 🍬 Sugar ×3 | 🥐 Flour ×6 | +30 HP → Dynamite Bottle | Day 8 |
 | 🥪 Bunny Burger | 🥕 Carrot ×6 | 🧈 Margarine ×3 | 🍞 Bread ×3 | +30 HP · Ap-pleClear 1/3 | Day 8 |
@@ -243,7 +243,7 @@ Each crop can be used as:
 | Icon | Name | Slot 1 | Slot 2 | Slot 3 | Effect Summary | Duration | Compatible |
 |------|------|--------|--------|--------|----------------|----------|-----------|
 | 🧊 | Frosteratrol Bottle | 🎂 Berry Cake ×8 | 🧪 Vial Lv1 ×1 | ❄️ Snowflake ×2 | Slow 30% move · Freeze 10% chance 2.5s · +10/20% dmg amp | 12s | SMG, AR |
-| ⚡ | Burstger Bottle | 🍔 Burger Berry ×8 | 🧪 Vial Lv1 ×1 | 🌱 Ginseng ×2 | +50% fire rate · +10% spread (trade-off) | 7s | AR, SMG, Shotgun |
+| ⚡ | Burstger Bottle | 🍔 Berry Burger ×8 | 🧪 Vial Lv1 ×1 | 🌱 Ginseng ×2 | +50% fire rate · +10% spread (trade-off) | 7s | AR, SMG, Shotgun |
 
 ### Tier 2 — Day 10–11 — Vial Lv1
 

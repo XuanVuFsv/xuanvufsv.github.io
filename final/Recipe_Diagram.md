@@ -119,7 +119,7 @@ All crafted at ⚗️ Crafting Station.
 | 🍳 | Omelet | Day 7 | +25 HP | **REGEN** — +HP regen after eating | 🥚 Egg ×9 (3×3) |
 | 🥖 | Soggy Bread | Day 5 | +30 HP | **STEALTH** — Monsters ignore you temporarily | 🥐 Flour ×3 + 💀 Monster Meat ×6 |
 | 🎂 | Berry Cake | Day 5 | +20 HP | **BOTTLE** → Frost Bottle | 🥐 Flour ×1 + 🫐 Berry ×8 + 🍬 Sugar ×1 |
-| 🍔 | Burger Berry | Day 6 | +25 HP | **BOTTLE** → Burstger Bottle | 🍞 Bread ×1 + 🥬 Cabbage ×3 + 🫐 Berry ×9 |
+| 🍔 | Berry Burger | Day 6 | +25 HP | **BOTTLE** → Burstger Bottle | 🍞 Bread ×1 + 🥬 Cabbage ×3 + 🫐 Berry ×9 |
 | 🍡 | Sweet Grapeball | Day 8 | +30 HP | **BOTTLE** → Cluster Bottle | 🍇 Grape ×6 + 🍬 Sugar ×3 + 🥐 Flour ×6 |
 | 🥪 | Bunny Burger | Day 8 | +30 HP | **CRAFT** — Ap-pleClear Ca-Rotket (1/3) | 🥕 Carrot ×6 + 🧈 Margarine ×3 + 🍞 Bread ×3 |
 | 🧁 | Carrot Cake | Day 8 | +40 HP | **CRAFT** — Ap-pleClear Ca-Rotket (2/3) | 🥕 Carrot ×6 + 🥛 Coconut Milk ×3 + 🍬 Sugar ×3 |
@@ -146,7 +146,7 @@ Danh sách tất cả items có thể tiêu thụ trực tiếp, kèm hiệu ứ
 | 🍞 | Bread | Day 5 | +5 HP | — |
 | 🥖 | Soggy Bread | Day 5 | +30 HP | **Stealth** — quái vật bỏ qua bạn tạm thời |
 | 🎂 | Berry Cake | Day 5 | +20 HP | — *(nguyên liệu Frosteratrol Bottle)* |
-| 🍔 | Burger Berry | Day 6 | +25 HP | — *(nguyên liệu Burstger Bottle)* |
+| 🍔 | Berry Burger | Day 6 | +25 HP | — *(nguyên liệu Burstger Bottle)* |
 | 🍳 | Omelet | Day 7 | +25 HP | **Regen** — hồi HP liên tục sau khi ăn |
 | 🍡 | Sweet Grapeball | Day 8 | +30 HP | — *(nguyên liệu Dynamite Bottle)* |
 | 🥪 | Bunny Burger | Day 8 | +30 HP | — *(craft step 1/3)* |
@@ -218,7 +218,7 @@ Xem chi tiết hiệu ứng tại [mục Bottles](#bottles) bên dưới.
 
 | Attribute | Value |
 |-----------|-------|
-| Recipe | 🍔 Burger Berry ×8 + 🧪 Vial Lv1 ×1 + 🌱 Ginseng ×2 |
+| Recipe | 🍔 Berry Burger ×8 + 🧪 Vial Lv1 ×1 + 🌱 Ginseng ×2 |
 | Fire rate | +50% |
 | Spread penalty | +**10%** bullet spread (trade-off) |
 
@@ -414,7 +414,7 @@ DAY 6
   Crops:       🍅 Tomato  [Trigger: Kill 300 monsters]
   Ingredients: 🥣 Cabbage Sauce
   Natural:     🟤 Guarana
-  Food:        🍔 Burger Berry
+  Food:        🍔 Berry Burger
   Bottle:      ⚡ Burstger Bottle
 
 DAY 7
