@@ -18,7 +18,7 @@ GDD
 
 Details: 
 # Crop Shooter — Development Timeline
-> Version 280426 · FPS Farming Survival · Target: Playable Build
+> Version 010526 · FPS Farming Survival · Target: Playable Build
 
 ---
 
