@@ -5,15 +5,10 @@ https://notebooklm.google.com/notebook/a737ade8-2d7e-4871-91f2-59fb8dbbf9a3?addS
 machinations.io
 
 done flow addressable data (đang hoàn thiện ability modifier 60%)
-done ui (simple navigator), game flow (playtest), ai (*),...
+done ui (simple navigator), game flow (playtest), ai,...
 done game design (còn enemy behaviour) polish save load
-3/5 done full workflow document optimize extmax7d
-10/5 done puzzle porfolio. extmax7d
-------------4/5------------ --15000-20000
---w1 17/5 ext24
-------------17/5 ext 27/5------------ --15000-20000
---24/5 w2 ext31
-*backup extend to 7d
+full workflow document optimize
+puzzle porfolio.
 
 Schedule:
 Addressable (tạm thời vừa làm vừa update và edit doc, follow rule cũ). Ưu tiên update lại các file này để setup addressable trong project nhanh hơn
@@ -42,20 +37,20 @@ Details:
 
 ---
 
-## 🗓️ Pre-Deadline: Target 3 May
+## 🗓️ Pre-Deadline: Target xxx
 
-### 28–29 Apr — AI Foundation + Map
+### xxx — AI Foundation + Map
 - [ ] NavMesh bake on existing map asset
 - [ ] Brute AI: NavMesh chase + melee attack (simple FSM)
 - [ ] Animator sync — prevent slide
 - [ ] **Unlocks:** SlowEffect + FreezeEffect testable
 
-### 30 Apr — Group 3 Complete
+### xxx — Group 3 Complete
 - [ ] `SlowEffect` + Factory — reduce `NavMeshAgent.speed` by `slowPercent`, restore on expire
 - [ ] `FreezeEffect` + Factory — set speed = 0, disable AI, restore after `freezeDuration`
 - [ ] `BottleSlotManager` duration tracking — bottle auto-expire after `activeDuration`
 
-### 1–2 May — Construction System
+### xxx — Construction System
 
 | Construction | Priority | Reason |
 |---|---|---|
@@ -76,22 +71,22 @@ Details:
 | Fabricate Gadget | 🔵 Post-deadline | Gadget system |
 | Refinery | 🔵 Post-deadline | Storage system |
 
-### 2–3 May — CV-Critical Features
+### xxx — CV-Critical Features
 - [ ] **Save/Load** — JSON-based, covers player progression + settings
 - [ ] **Addressable** — basic asset loading pipeline setup
 - [ ] **Simple Guide** — in-game UI page or HTML doc
 
 ---
 
-## 🗓️ Extended: Target 7 May
+## 🗓️ Extended: Target xxx
 
-### 4–5 May — AI + Economy + Tools
+### xxx — AI + Economy + Tools
 - [ ] Swarm AI — clone Brute, tweak speed/HP, validate AOE effects
 - [ ] Farm Market dynamic pricing — Perlin Noise + supply/demand differential
 - [ ] Remote Config — balance values via Addressable remote (no hardcode)
 - [ ] CSV ↔ SO Importer/Exporter — `Assets/Editor/Tools/SOImporter/` (after SO structure is frozen)
 
-### 6–7 May — Polish + Optimize
+### xxx — Polish + Optimize
 - [ ] GPU/CPU profiler pass — identify bottlenecks
 - [ ] Object Pool audit (Group 5) — VFX + Projectile pooling
 - [ ] `StealthEffect` + Factory — pending enemy AI perception
@@ -109,16 +104,16 @@ Details:
 | Stat system — Query, Mediator, Cache | ✅ Done | Float migration, nullable cache |
 | Interface design — IDamageable, IEffectApplicable, IHealable | ✅ Done | Bidirectional player ↔ enemy |
 | ScriptableObject data pipeline | ✅ Done | BottleStat, AbilityBaseStat, GlobalAbilityConfig |
-| NavMesh AI | 📅 28–29 Apr | Brute + Swarm |
-| Construction system | 📅 1–2 May | Gear Upgrades priority |
-| Save / Load | 📅 2–3 May | JSON-based |
-| Addressable | 📅 2–3 May | Basic setup |
-| Remote Config | 📅 4–5 May | Balance values |
-| CSV ↔ SO Import / Export | 📅 4–5 May | Editor tool, post SO freeze |
-| GPU / CPU Optimization | 📅 6–7 May | Profiler pass |
-| Object Pooling (Group 5) | 📅 6–7 May | VFX + Projectile |
-| Economy — Dynamic pricing | 📅 4–5 May | Perlin Noise + supply/demand |
-| Simple Guide | 📅 2–3 May | In-game or HTML |
+| NavMesh AI | 📅 xxx | Brute + Swarm |
+| Construction system | 📅 xxx | Gear Upgrades priority |
+| Save / Load | 📅 xxx | JSON-based |
+| Addressable | 📅 xxx | Basic setup |
+| Remote Config | 📅 xxx | Balance values |
+| CSV ↔ SO Import / Export | 📅 xxx | Editor tool, post SO freeze |
+| GPU / CPU Optimization | 📅 xxx | Profiler pass |
+| Object Pooling (Group 5) | 📅 xxx | VFX + Projectile |
+| Economy — Dynamic pricing | 📅 xxx | Perlin Noise + supply/demand |
+| Simple Guide | 📅 xxx | In-game or HTML |
 
 ---
 
@@ -126,7 +121,7 @@ Details:
 
 | Feature | Blocked by |
 |---|---|
-| `SlowEffect` / `FreezeEffect` | NavMesh AI (28–29 Apr) |
+| `SlowEffect` / `FreezeEffect` | NavMesh AI (xxx) |
 | `StealthEffect` | Enemy AI perception system |
 | Crop Turret | Enemy system complete |
 | Necromancer AI | Tactical AI research (Part 27, 29, 41) |
@@ -138,13 +133,13 @@ Details:
 ## 🏗️ Architecture Notes
 
 - **AI Plan (by group):**
-  - Core Navigation: Part 1, 32, 33 before 3 May — Part 2, 25 after
-  - Animation: Part 3 before 3 May — Part 42, 39 after
-  - Decision Making: Simple FSM or Part 48 BT before 3 May — GOAP, Unity Behavior after
+  - Core Navigation: Part 1, 32, 33 before xxx — Part 2, 25 after
+  - Animation: Part 3 before xxx — Part 42, 39 after
+  - Decision Making: Simple FSM or Part 48 BT before xxx — GOAP, Unity Behavior after
   - Tactical AI: All post-deadline (Part 27, 29, 40, 41, 44)
 
 - **CSV ↔ SO Importer location:** `Assets/Editor/Tools/SOImporter/`
-  - Build after SO structure is frozen (post 3 May)
+  - Build after SO structure is frozen (post xxx)
   - Pipeline: CSV → SO assets → Addressable Groups → Runtime load
 
 - **Construction fast-track:** Gear Upgrades, Farm House, Med Station reuse existing

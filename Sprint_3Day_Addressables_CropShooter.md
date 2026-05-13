@@ -233,4 +233,4 @@
 
 ---
 
-*Sprint 3 Ngày · Crop Shooter Addressables · 06/04/2026*
+*Sprint 3 Ngày · Crop Shooter Addressables*
